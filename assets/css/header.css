@@ -24,13 +24,20 @@
 }
 
 .section-hero {
+    max-width: 675px;
+    margin: auto;
+    padding-top: 68px;
+}
+
+.hero-game {
     display: grid;
     justify-content: center;
     justify-items: center;
-    max-width: 675px;
-    margin: auto;
     grid-gap: 24px;
-    margin-top: 68px;
+}
+
+#hero-game-1 {
+    display: none;
 }
 
 h1 {
@@ -58,7 +65,67 @@ h1 {
     opacity: 0.48;
 }
 
-.section-hero img {
+.section-hero .game-logo {
     margin-top: 146px;
     max-width: 436px;
+}
+
+.games-container-container {
+    position: relative;
+}
+
+.games-controller {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    grid-gap: 24px;
+    grid-template-rows: 1fr auto 32px auto 1fr;
+    z-index: 2;
+    justify-items: end;
+}
+
+.game-controller-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.games-controller .line {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 251, 250, 0.24);
+    margin-right: 15px;
+}
+
+.games-controller svg path {
+    fill: rgba(255, 251, 250, 0.16);
+}
+
+.active-game-controller-item svg path {
+    fill: rgba(255, 251, 250, 1);
+}
+
+.game-controller-item span {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    /* SOLID RED/ White */
+    color: rgba(255, 251, 250, 0.32);
+}
+
+.active-game-controller-item span {
+    color: rgba(255, 251, 250, 1);
+}
+
+#btn-primary-header {
+    margin-top: 76px;
 }
