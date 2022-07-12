@@ -10,12 +10,13 @@
     <meta name="author" content="Ascended" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/news.css" />
     <link rel="icon" type="image/svg" sizes="16x16" href="./assets/img/favicon.svg" />
     <title>3 Mind Games</title>
 </head>
 
 <body>
-    <div class="wrap-hero">
+    <div class="wrap-hero wrap-hero-game-1">
         <div class="out-container out-container-header">
             <div class="container">
                 <header class="header">
@@ -47,7 +48,7 @@
             <div class="container games-container-container">
                 <div class="section-hero">
                     <div class="hero-game show-hero-game" id="hero-game-1">
-                        <h1>Welcome to 3Mind Games</h1>
+                        <h1 class="heading-secondary">Welcome to 3Mind Games</h1>
                         <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
                         <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" class="game-logo">
 
@@ -59,7 +60,7 @@
                     </div>
 
                     <div class="hero-game" id="hero-game-2">
-                        <h2>Welcome to 3Mind Games</h2>
+                        <h2 class="heading-secondary center-text">Welcome to 3Mind Games</h2>
                         <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
                         <img src="./assets/img/theprotagonist-logo.png" alt="Shadow's Light" class="game-logo">
 
@@ -73,7 +74,7 @@
 
                 <div class="games-controller">
                     <div class="line" id="line_1"></div>
-                    <div onclick="swapgame('1', '2')" class="game-controller-item active-game-controller-item">
+                    <div onclick="swapgame('1', '2')" class="game-controller-item active-game-controller-item" id="game-controller-item-1">
                         <span>Shadow’s Light</span>
                         <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 10L21.9282 14V22L15 26L8.0718 22V14L15 10Z" fill="#FFFBFA"/>
@@ -81,7 +82,7 @@
                             </svg>
                     </div>
                     <div class="line" id="line_2"></div>
-                    <div onclick="swapgame('2', '1')" class="game-controller-item">
+                    <div onclick="swapgame('2', '1')" class="game-controller-item" id="game-controller-item-2">
                         <span>The Protagonist: EX-1 Light</span>
                         <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 10L21.9282 14V22L15 26L8.0718 22V14L15 10Z" fill="#FFFBFA"/>
@@ -93,15 +94,38 @@
             </div>
         </div>
     </div>
+    <div class="wrap-news out-container">
+        <div class="container news-container">
+            <div class="news-item">
+                <div class="left-side">
+                    <img src="./assets/img/choose-your-side.png" alt="Choose Your Side">
+                </div>
+                <div class="right-side">
+                    <h2 class="heading-secondary">Choose your side</h2>
+                    <p class="small-header">Every story has two sides. Now you can experience both!</p>
+                    <p class="news-p">Play as knights and magicians, or as demons and orcs in this dark fantasy narrative adventure. Change the story by making hard choices, and live with the consequences! Every story has two sides. Now you can experience both!</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="right-side">
+                    <h2 class="heading-secondary">Demons and orcs</h2>
+                    <p class="small-header">Light or dark, good or evil; everyone has their reasons</p>
+                    <p class="news-p">In a barren & unforgiving eastern land, an orc chieftain stumbles upon a mysterious parched and withering woman, whose premonition could be the key to saving his clan and bringing down the Holy Kingdom.</p>
+                </div>
+                <div class="left-side">
+                    <img src="./assets/img/demons-and-orcs.png" alt="Demons and Orcs">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <section class="section-about-us out-container"> 
+    <section class="section-about-us out-container">
         <div class="container">
             <div class="section-about-us__header">
                 <div class="section-about-us__heading">
                     <img class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon">
                     <h2 class="heading-secondary">ABOUT US</h2>
-                    <img  class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon">
+                    <img class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon">
                 </div>
                 <nav class="section-about-us__nav">
                     <ul class="section-about-us__nav-box">

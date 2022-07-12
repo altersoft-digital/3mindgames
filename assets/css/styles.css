@@ -71,6 +71,10 @@
   transition: 0.2s ease-in-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #080707;
   color: #fff;
@@ -135,7 +139,12 @@ button {
   display: block;
 }
 
+.center-text {
+  text-align: center;
+}
+
 /******************************SECTION ABOUT US STYLES**************************/
+
 .section-about-us {
   margin-top: 120px;
 }
@@ -224,6 +233,7 @@ button {
 }
 
 /* FOUNDERS */
+
 .section-about-us__founders-img {
   height: 25vh;
   width: 25vh;
@@ -232,7 +242,7 @@ button {
     rgba(126, 213, 111, 0.8),
     rgba(40, 180, 133, 0.8)
   );
-  clip-path: polygon(40% 30%, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 /******************************FOOTER STYLES**************************/
