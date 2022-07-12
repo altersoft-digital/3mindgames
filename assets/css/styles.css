@@ -81,6 +81,12 @@ body {
     font-family: "DM Sans";
     font-weight: 400;
     font-style: normal;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+.hide-overflow {
+    overflow: hidden;
 }
 
 a,
@@ -167,7 +173,15 @@ button {
 .section-about-us__heading {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 16px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 857px;
+    margin: auto;
+}
+
+.section-about-us__heading h2 {
+    text-align: center;
 }
 
 .section-about-us__heading img {

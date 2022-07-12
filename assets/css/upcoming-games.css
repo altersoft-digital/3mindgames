@@ -1,5 +1,5 @@
 .container-upcoming-games .section-about-us__heading {
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .container-upcoming-games {
@@ -131,4 +131,54 @@
 
 .main-image-4 {
     background-image: url('../img/upcoming-image-4.jpg');
+}
+
+@media only screen and (max-width: 1148px) {
+    .main-upcoming-games {
+        grid-auto-flow: row;
+        grid-gap: 48px;
+        grid-template-columns: unset;
+        justify-content: center;
+    }
+    .upcoming-main-image {
+        min-height: 458px;
+    }
+    .main-upcoming-games .right-side {
+        order: 1;
+    }
+    .main-upcoming-games .left-side {
+        order: 2;
+        justify-items: center;
+    }
+    .upcoming-games-button-container {
+        order: 1;
+    }
+    .upcoming-p {
+        order: 3;
+    }
+    #upcoming-logo {
+        display: none;
+    }
+    .upcoming-socials-container {
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .container-upcoming-games {
+        margin: 40px 24px 120px 24px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .upcoming-main-image {
+        min-height: 320px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #upcoming-logo {
+        width: 100%;
+        height: auto;
+    }
 }
