@@ -67,15 +67,24 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'DM Sans';
-    font-weight: 400;
     scrollbar-width: 0;
-    color: #fff;
     transition: 0.2s ease-in-out;
 }
 
 body {
     background-color: #080707;
+    color: #fff;
+    font-family: 'DM Sans';
+    font-weight: 400;
+}
+
+a,
+input,
+textarea,
+button {
+    color: #fff;
+    font-family: 'DM Sans';
+    font-weight: 400;
 }
 
 .out-container {
