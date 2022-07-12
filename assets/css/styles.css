@@ -71,6 +71,10 @@
     transition: 0.2s ease-in-out;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #080707;
     color: #fff;
@@ -133,6 +137,10 @@ button {
 
 .btn-primary:hover>.btn-hoverline {
     display: block;
+}
+
+.center-text {
+    text-align: center;
 }
 
 

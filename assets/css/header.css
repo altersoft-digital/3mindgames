@@ -1,7 +1,16 @@
 .wrap-hero {
     width: 100%;
     height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrap-hero-game-1 {
     background-image: url('../img/shadows_light_poster.jpg');
+}
+
+.wrap-hero-game-2 {
+    background-image: url('../img/theprotagonist-poster.jpg');
 }
 
 .header {
@@ -67,7 +76,8 @@ h1 {
 
 .section-hero .game-logo {
     margin-top: 146px;
-    max-width: 436px;
+    max-height: 120px;
+    width: auto;
 }
 
 .games-container-container {

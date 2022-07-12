@@ -1,0 +1,44 @@
+.wrap-news {
+    padding: 80px 0;
+}
+
+.news-container {
+    display: grid;
+    grid-gap: 120px;
+}
+
+.news-item {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 80px;
+    align-items: center;
+}
+
+.news-p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 251, 250, 0.48);
+}
+
+.small-header {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(230, 225, 224, 0.8);
+}
+
+.news-item .right-side {
+    display: grid;
+    grid-gap: 24px;
+}
+
+.news-item .right-side .news-p {
+    margin-top: 24px;
+}
