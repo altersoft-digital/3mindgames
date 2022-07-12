@@ -329,6 +329,22 @@ button {
   display: none;
 }
 
+.about-founders {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 64px 48px;
+  background-color: rgba(255, 251, 250, 0.04);
+  grid-column: span 3;
+}
+
+.about-founders p {
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(230, 225, 224, 0.6);
+}
+
 /* MISSIONS */
 
 .section-about-us__missions {
@@ -341,10 +357,15 @@ button {
   margin: auto;
 }
 
+.section-about-us__missions_header .heading-tertiary {
+  text-align: center;
+}
+
 .section__missions-values-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 290px;
+  column-gap: 20px;
+  justify-content: space-between;
   row-gap: 120px;
   background: rgba(255, 251, 250, 0.04);
   padding: 80px;
@@ -354,6 +375,11 @@ button {
   display: flex;
   flex-direction: column;
   gap: 48px;
+  max-width: 528px;
+}
+
+.section__missions-values-cont .section__missions-values-box:nth-child(3) {
+  justify-self: end;
 }
 
 .section__missions-values-list {
@@ -364,6 +390,7 @@ button {
 
 .missions__heading {
   grid-column: span 2;
+  text-align: center;
 }
 
 .section__missions-value {
@@ -411,6 +438,8 @@ button {
 
 .office_build-img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* NEW_TALENTS */
@@ -488,8 +517,14 @@ input {
   margin-left: auto;
 }
 
+.new-talents__city-img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .section-about-us__subsec {
   display: none;
+  width: 100%;
 }
 
 .section-about-us__subsec.active {
@@ -519,7 +554,6 @@ input {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fffbfa;
-  text-align: center;
 }
 .sub-heading {
   font-family: "Orbitron";
@@ -629,6 +663,91 @@ input {
     text-transform: uppercase;
     color: #fffbfa;
   }
+
+  .section-about-us__new-talents {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .section-about-us__founder {
+    max-width: 210px;
+    justify-self: end;
+  }
+
+  .section-about-us__founder.active {
+    max-width: 250px;
+    justify-self: start;
+  }
+
+  .founder-changer {
+    width: 100%;
+    max-width: 48px;
+    max-height: 36px;
+  }
+
+  .founder__name {
+    font-size: 16px;
+    line-height: 20px;
+    width: max-content;
+  }
+
+  .founder__position {
+    font-size: 14px;
+    line-height: 18px;
+    width: max-content;
+  }
+
+  .section-about-us__founder.active .founder__name {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .section-about-us__founder.active .founder__position {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .section-about-us__nav-link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .section-about-us__nav-list.active .section-about-us__nav-link,
+  .section-about-us__nav-list:hover .section-about-us__nav-link {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .section-about-us__nav-box {
+    gap: 16px;
+  }
+
+  .section-about-us__new-talents {
+    grid-template-columns: 1fr;
+  }
+  .section-new-talents__right-side {
+    grid-row: 1/-1;
+  }
+
+  .section__missions-values-cont {
+    padding: 48px 24px;
+  }
+
+  .section__missions-value {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .heading-tertiary {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .missions-header__subheading {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -656,5 +775,25 @@ input {
     border: none;
     font-size: 16px;
     cursor: pointer;
+  }
+
+  .section-about-us__founder.active {
+    max-width: 200px;
+  }
+
+  .founder__name {
+    display: none;
+  }
+
+  .founder__position {
+    display: none;
+  }
+
+  .section-about-us__founder.active .founder__name {
+    display: inline-block;
+  }
+
+  .section-about-us__founder.active .founder__position {
+    display: inline-block;
   }
 }
