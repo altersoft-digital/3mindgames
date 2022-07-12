@@ -46,28 +46,34 @@
         <div class="out-container out-container-hero">
             <div class="container games-container-container">
                 <div class="section-hero">
-                    <div class="hero-game" id="hero-game-1">
+                    <div class="hero-game show-hero-game" id="hero-game-1">
                         <h1>Welcome to 3Mind Games</h1>
                         <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
                         <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" class="game-logo">
-                    </div>
 
-                    <div class="hero-game" id="hero-game-2">
-                        <h1>Welcome to 3Mind Games</h1>
-                        <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
-                        <img src="./assets/img/theprotagonist-logo.png" alt="Shadow's Light" class="game-logo">
-
-                        <button class="btn-primary" id="btn-primary-header">
+                        <a href="#"><button class="btn-primary btn-primary-header">
                             <span>Visit</span>
                             <img src="./assets/img/arrow-up-corner.svg" alt="Visit">
                             <div class="btn-hoverline"></div>
-                        </button>
+                        </button></a>
+                    </div>
+
+                    <div class="hero-game" id="hero-game-2">
+                        <h2>Welcome to 3Mind Games</h2>
+                        <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
+                        <img src="./assets/img/theprotagonist-logo.png" alt="Shadow's Light" class="game-logo">
+
+                        <a href="#"><button class="btn-primary btn-primary-header">
+                            <span>Visit</span>
+                            <img src="./assets/img/arrow-up-corner.svg" alt="Visit">
+                            <div class="btn-hoverline"></div>
+                        </button></a>
                     </div>
                 </div>
 
                 <div class="games-controller">
                     <div class="line" id="line_1"></div>
-                    <div class="game-controller-item active-game-controller-item">
+                    <div onclick="swapgame('1', '2')" class="game-controller-item active-game-controller-item">
                         <span>Shadow’s Light</span>
                         <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 10L21.9282 14V22L15 26L8.0718 22V14L15 10Z" fill="#FFFBFA"/>
@@ -75,7 +81,7 @@
                             </svg>
                     </div>
                     <div class="line" id="line_2"></div>
-                    <div class="game-controller-item">
+                    <div onclick="swapgame('2', '1')" class="game-controller-item">
                         <span>The Protagonist: EX-1 Light</span>
                         <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 10L21.9282 14V22L15 26L8.0718 22V14L15 10Z" fill="#FFFBFA"/>
@@ -189,6 +195,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./assets/js/games-controller.js"></script>
 </body>
 
 </html>

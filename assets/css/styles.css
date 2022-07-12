@@ -111,17 +111,17 @@ button {
 }
 
 .btn-primary {
+  border: 1px solid #fffbfa;
+  position: relative;
   display: grid;
   grid-auto-flow: column;
   align-items: center;
   grid-gap: 16px;
   padding: 24px 64px;
   border: 1px solid #fffbfa;
-  position: relative;
 }
 
 .btn-hoverline {
-  content: "";
   position: absolute;
   right: -4px;
   bottom: -4px;
