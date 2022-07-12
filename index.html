@@ -1,255 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Digital Product Agency" />
-    <meta
-      name="keywords"
-      content="digital, product, agency, design, uiux, frontend, backend, website, create, project"
-    />
+    <meta name="keywords" content="digital, product, agency, design, uiux, frontend, backend, website, create, project" />
     <meta name="author" content="Ascended" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/news.css" />
-    <link
-      rel="icon"
-      type="image/svg"
-      sizes="16x16"
-      href="./assets/img/favicon.svg"
-    />
+    <link rel="icon" type="image/svg" sizes="16x16" href="./assets/img/favicon.svg" />
     <link rel="stylesheet" href="./assets/css/upcoming-games.css" />
     <link rel="icon" type="image/svg" sizes="16x16" href="./assets/img/favicon.svg" />
     <title>3 Mind Games</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="wrap-hero wrap-hero-game-1">
-      <div class="out-container out-container-header">
-          <div class="container">
-              <header class="header">
-                  <nav class="header-nav-left">
-                      <ul>
-                          <li>
-                              <a href="#">Home</a>
-                          </li>
-                          <li>
-                              <a href="#">Games</a>
-                          </li>
-                      </ul>
-                  </nav>
-                  <a href="#"><img id="main-logo" src="./assets/img/logo.svg" alt="3 Mind Games" /></a>
-                  <nav class="header-nav-right">
-                      <ul>
-                          <li>
-                              <a href="#">Careers</a>
-                          </li>
-                          <li>
-                              <a href="#">About us</a>
-                          </li>
-                      </ul>
-                  </nav>
-                  <button id="burger-menu"><img src="./assets/img/burger_menu.svg" alt="Menu"></button>
-                  <!-- <div class="mobile-menu-container">
+        <div class="out-container out-container-header">
+            <div class="container">
+                <header class="header">
+                    <nav class="header-nav-left">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Games</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#"><img id="main-logo" src="./assets/img/logo.svg" alt="3 Mind Games" /></a>
+                    <nav class="header-nav-right">
+                        <ul>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button id="burger-menu">
+                      <img onclick="openmenu()" class="show-burger-image" id="hamburger_image" src="./assets/img/burger_menu.svg" alt="Menu">
+                      <img onclick="closemenu()" id="close_image" src="./assets/img/close.svg" alt="Close Menu">
+                    </button>
+                    <div class="mobile-menu-container">
+                        <div class="mobile-menu-header">
+                            <ul class="mobile-menu-nav">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Games</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="out-container out-container-hero">
+            <div class="container games-container-container">
+                <div class="section-hero">
+                    <div class="hero-game show-hero-game" id="hero-game-1">
+                        <h1 class="heading-secondary">Welcome to 3Mind Games</h1>
+                        <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
+                        <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" class="game-logo img">
 
-                  </div> -->
-              </header>
-          </div>
-      </div>
-      <div class="out-container out-container-hero">
-          <div class="container games-container-container">
-              <div class="section-hero">
-                  <div class="hero-game show-hero-game" id="hero-game-1">
-                      <h1 class="heading-secondary">Welcome to 3Mind Games</h1>
-                      <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
-                      <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" class="game-logo img">
-
-                      <a href="#"><button class="btn-primary btn-primary-header">
+                        <a href="#"><button class="btn-primary btn-primary-header">
                           <span>Visit</span>
                           <img src="./assets/img/arrow-up-corner.svg" alt="Visit">
                           <div class="btn-hoverline"></div>
                       </button></a>
-                  </div>
+                    </div>
 
-                  <div class="hero-game" id="hero-game-2">
-                      <h2 class="heading-secondary center-text">Welcome to 3Mind Games</h2>
-                      <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
-                      <img src="./assets/img/theprotagonist-logo.png" alt="Shadow's Light" class="game-logo img">
+                    <div class="hero-game" id="hero-game-2">
+                        <h2 class="heading-secondary center-text">Welcome to 3Mind Games</h2>
+                        <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
+                        <img src="./assets/img/theprotagonist-logo.png" alt="Shadow's Light" class="game-logo img">
 
-                      <a href="#"><button class="btn-primary btn-primary-header">
+                        <a href="#"><button class="btn-primary btn-primary-header">
                           <span>Visit</span>
                           <img src="./assets/img/arrow-up-corner.svg" alt="Visit">
                           <div class="btn-hoverline"></div>
                       </button></a>
-                  </div>
-              </div>
+                    </div>
+                </div>
 
-              <div class="games-controller">
-                  <div class="line" id="line_1"></div>
-                  <div onclick="swapgame('1', '2')" class="game-controller-item active-game-controller-item" id="game-controller-item-1">
-                      <span>Shadow’s Light</span>
-                      <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="games-controller">
+                    <div class="line" id="line_1"></div>
+                    <div onclick="swapgame('1', '2')" class="game-controller-item active-game-controller-item" id="game-controller-item-1">
+                        <span>Shadow’s Light</span>
+                        <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M15 10L21.9282 14V22L15 26L8.0718 22V14L15 10Z" fill="#FFFBFA"/>
                               <path d="M17 6.5359L15 5.3812L13 6.5359L6.0718 10.5359L4.0718 11.6906V14V22V24.3094L6.0718 25.4641L13 29.4641L15 30.6188L17 29.4641L23.9282 25.4641L25.9282 24.3094V22V14V11.6906L23.9282 10.5359L17 6.5359Z" stroke="#FFFBFA" stroke-opacity="0.16" stroke-width="8"/>
                           </svg>
-                  </div>
-                  <div class="line" id="line_2"></div>
-                  <div onclick="swapgame('2', '1')" class="game-controller-item" id="game-controller-item-2">
-                      <span>The Protagonist: EX-1 Light</span>
-                      <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </div>
+                    <div class="line" id="line_2"></div>
+                    <div onclick="swapgame('2', '1')" class="game-controller-item" id="game-controller-item-2">
+                        <span>The Protagonist: EX-1 Light</span>
+                        <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M15 10L21.9282 14V22L15 26L8.0718 22V14L15 10Z" fill="#FFFBFA"/>
                               <path d="M17 6.5359L15 5.3812L13 6.5359L6.0718 10.5359L4.0718 11.6906V14V22V24.3094L6.0718 25.4641L13 29.4641L15 30.6188L17 29.4641L23.9282 25.4641L25.9282 24.3094V22V14V11.6906L23.9282 10.5359L17 6.5359Z" stroke="#FFFBFA" stroke-opacity="0.16" stroke-width="8"/>
                           </svg>
-                  </div>
-                  <div class="line" id="line_3"></div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="wrap-news out-container">
-      <div class="container news-container">
-          <div class="news-item">
-              <div class="left-side">
-                  <img class="img" src="./assets/img/choose-your-side.png" alt="Choose Your Side">
-              </div>
-              <div class="right-side">
-                  <h2 class="heading-secondary">Choose your side</h2>
-                  <p class="small-header">Every story has two sides. Now you can experience both!</p>
-                  <p class="news-p">Play as knights and magicians, or as demons and orcs in this dark fantasy narrative adventure. Change the story by making hard choices, and live with the consequences! Every story has two sides. Now you can experience both!</p>
-              </div>
-          </div>
-          <div class="news-item">
-              <div class="right-side">
-                  <h2 class="heading-secondary">Demons and orcs</h2>
-                  <p class="small-header">Light or dark, good or evil; everyone has their reasons</p>
-                  <p class="news-p">In a barren & unforgiving eastern land, an orc chieftain stumbles upon a mysterious parched and withering woman, whose premonition could be the key to saving his clan and bringing down the Holy Kingdom.</p>
-              </div>
-              <div class="left-side">
-                  <img class="img" src="./assets/img/demons-and-orcs.png" alt="Demons and Orcs">
-              </div>
-          </div>
-      </div>
-  </div>
+                    </div>
+                    <div class="line" id="line_3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-news out-container">
+        <div class="container news-container">
+            <div class="news-item">
+                <div class="left-side">
+                    <img class="img" src="./assets/img/choose-your-side.png" alt="Choose Your Side">
+                </div>
+                <div class="right-side">
+                    <h2 class="heading-secondary">Choose your side</h2>
+                    <p class="small-header">Every story has two sides. Now you can experience both!</p>
+                    <p class="news-p news-p-desktop">Play as knights and magicians, or as demons and orcs in this dark fantasy narrative adventure. Change the story by making hard choices, and live with the consequences! Every story has two sides. Now you can experience both!</p>
+                </div>
+                <p class="news-p news-p-for-mobile">Play as knights and magicians, or as demons and orcs in this dark fantasy narrative adventure. Change the story by making hard choices, and live with the consequences! Every story has two sides. Now you can experience both!</p>
+            </div>
+            <div class="news-item">
+                <div class="right-side">
+                    <h2 class="heading-secondary">Demons and orcs</h2>
+                    <p class="small-header">Light or dark, good or evil; everyone has their reasons</p>
+                    <p class="news-p news-p-desktop">In a barren & unforgiving eastern land, an orc chieftain stumbles upon a mysterious parched and withering woman, whose premonition could be the key to saving his clan and bringing down the Holy Kingdom.</p>
+                </div>
+                <div class="left-side">
+                    <img class="img" src="./assets/img/demons-and-orcs.png" alt="Demons and Orcs">
+                </div>
+                <p class="news-p news-p-for-mobile">Play as knights and magicians, or as demons and orcs in this dark fantasy narrative adventure. Change the story by making hard choices, and live with the consequences! Every story has two sides. Now you can experience both!</p>
+            </div>
+        </div>
+    </div>
 
-  <div class="out-container out-container-upcoming-games">
-      <div class="container container-upcoming-games">
-          <div class="section-about-us__heading">
-              <img class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon">
-              <h2 class="heading-secondary">Upcoming Games</h2>
-              <img class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon">
-          </div>
+    <div class="out-container out-container-upcoming-games">
+        <div class="container container-upcoming-games">
+            <div class="section-about-us__heading">
+                <img class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon">
+                <h2 class="heading-secondary">Upcoming Games</h2>
+                <img class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon">
+            </div>
 
-          <div class="main-upcoming-games">
-              <div class="left-side">
-                  <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" id="upcoming-logo">
-                  <p class="upcoming-p">
-                      The long stalemate of war is about to be broken. On one side, a kingdom blessed by benevolent gods. On the other, a land crawling with monsters. The truth will soon be revealed...
-                      <br><br> But all is not yet lost for humanity. The king musters a cohort of elite paladins for a secret and perilous mission that could end the threat once and for all.
-                  </p>
-                  <div class="upcoming-socials-container">
-                      <a href="#"><img src="./assets/img/steam.svg" alt="Steam"></a>
-                      <a href="#"><img src="./assets/img/sony.svg" alt="Playstation"></a>
-                      <a href="#"><img src="./assets/img/xbox.svg" alt="Xbox"></a>
-                  </div>
+            <div class="main-upcoming-games">
+                <div class="left-side">
+                    <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" id="upcoming-logo">
+                    <p class="upcoming-p">
+                        The long stalemate of war is about to be broken. On one side, a kingdom blessed by benevolent gods. On the other, a land crawling with monsters. The truth will soon be revealed...
+                        <br><br> But all is not yet lost for humanity. The king musters a cohort of elite paladins for a secret and perilous mission that could end the threat once and for all.
+                    </p>
+                    <div class="upcoming-socials-container">
+                        <a href="#"><img src="./assets/img/steam.svg" alt="Steam"></a>
+                        <a href="#"><img src="./assets/img/sony.svg" alt="Playstation"></a>
+                        <a href="#"><img src="./assets/img/xbox.svg" alt="Xbox"></a>
+                    </div>
 
-                  <div>
-                      <a href="#" class="upcoming-button-container"><button class="btn-primary btn-primary-header">
+                    <div class="upcoming-games-button-container">
+                        <a href="#" class="upcoming-button-container"><button class="btn-primary btn-primary-header">
                           <span>Visit</span>
                           <img src="./assets/img/arrow-up-corner.svg" alt="Visit">
                           <div class="btn-hoverline"></div>
                       </button></a>
-                  </div>
-              </div>
-              <div class="right-side">
-                  <div class="upcoming-main-image">
-                      <div class="main-image-1" id="upcoming-main-image-inside"></div>
-                      <img src="./assets/img/play-button.svg" alt="Play" id="play">
-                  </div>
-                  <div class="upcoming-small-images-container">
-                      <img id="small-image-1" onclick="changepicture('1')" class="active-small-image" src="./assets/img/upcoming-image-1.jpg" alt="Upcoming Image 1">
-                      <img id="small-image-2" onclick="changepicture('2')" src="./assets/img/upcoming-image-2.jpg" alt="Upcoming Image 2">
-                      <img id="small-image-3" onclick="changepicture('3')" src="./assets/img/upcoming-image-3.jpg" alt="Upcoming Image 3">
-                      <img id="small-image-4" onclick="changepicture('4')" src="./assets/img/upcoming-image-4.jpg" alt="Upcoming Image 4">
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="upcoming-main-image">
+                        <div class="main-image-1" id="upcoming-main-image-inside"></div>
+                        <img src="./assets/img/play-button.svg" alt="Play" id="play">
+                    </div>
+                    <div class="upcoming-small-images-container">
+                        <img id="small-image-1" onclick="changepicture('1')" class="active-small-image" src="./assets/img/upcoming-image-1.jpg" alt="Upcoming Image 1">
+                        <img id="small-image-2" onclick="changepicture('2')" src="./assets/img/upcoming-image-2.jpg" alt="Upcoming Image 2">
+                        <img id="small-image-3" onclick="changepicture('3')" src="./assets/img/upcoming-image-3.jpg" alt="Upcoming Image 3">
+                        <img id="small-image-4" onclick="changepicture('4')" src="./assets/img/upcoming-image-4.jpg" alt="Upcoming Image 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="section-about-us out-container">
-      <div class="container section-about-us__container">
-        <div class="section-about-us__header">
-          <div class="section-about-us__heading">
-            <img
-              class="left-arrow"
-              src="./assets/img/arrow.svg"
-              alt="Arrow left icon"
-            />
-            <h2 class="heading-secondary">ABOUT US</h2>
-            <img
-              class="right-arrow"
-              src="./assets/img/arrow.svg"
-              alt="Arrow right icon"
-            />
-          </div>
-          <nav class="section-about-us__nav">
-            <ul class="section-about-us__nav-box">
-              <li
-                class="section-about-us__nav-list active"
-                id="founders"
-                onclick="LetsDisplay('#founders', '.section-about-us__founders')"
-              >
-                <button class="btn section-about-us__nav-link">Founders</button>
-                <div class="border__bottom"></div>
-              </li>
-              <li
-                class="section-about-us__nav-list"
-                id="mission"
-                onclick="LetsDisplay('#mission', '.section-about-us__missions')"
-              >
-                <button class="btn section-about-us__nav-link">MISSION</button>
-                <div class="border__bottom"></div>
-              </li>
-              <li
-                class="section-about-us__nav-list"
-                id="origins"
-                onclick="LetsDisplay('#origins', '.section-about-us__origins')"
-              >
-                <button class="btn section-about-us__nav-link">ORIGINS</button>
-                <div class="border__bottom"></div>
-              </li>
-              <li
-                class="section-about-us__nav-list"
-                id="newTalents"
-                onclick="LetsDisplay('#newTalents', '.section-about-us__new-talents')"
-              >
-                <button class="btn section-about-us__nav-link">
+        <div class="container section-about-us__container">
+            <div class="section-about-us__header">
+                <div class="section-about-us__heading">
+                    <img class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon" />
+                    <h2 class="heading-secondary">ABOUT US</h2>
+                    <img class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon" />
+                </div>
+                <nav class="section-about-us__nav">
+                    <ul class="section-about-us__nav-box">
+                        <li class="section-about-us__nav-list active" id="founders" onclick="LetsDisplay('#founders', '.section-about-us__founders')">
+                            <button class="btn section-about-us__nav-link">Founders</button>
+                            <div class="border__bottom"></div>
+                        </li>
+                        <li class="section-about-us__nav-list" id="mission" onclick="LetsDisplay('#mission', '.section-about-us__missions')">
+                            <button class="btn section-about-us__nav-link">MISSION</button>
+                            <div class="border__bottom"></div>
+                        </li>
+                        <li class="section-about-us__nav-list" id="origins" onclick="LetsDisplay('#origins', '.section-about-us__origins')">
+                            <button class="btn section-about-us__nav-link">ORIGINS</button>
+                            <div class="border__bottom"></div>
+                        </li>
+                        <li class="section-about-us__nav-list" id="newTalents" onclick="LetsDisplay('#newTalents', '.section-about-us__new-talents')">
+                            <button class="btn section-about-us__nav-link">
                   NEW TALENTS
                 </button>
-                <div class="border__bottom"></div>
-              </li>
-            </ul>
-          </nav>
-       
-        <div class="section-about-us__subsec section-about-us__founders active">
-          <div class="section-about-us__founder active">
-            <div class="single-founder__header">
-              <p class="founder__name">ALEXANDRE MARTEL</p>
-              <p class="founder__position">CEO AND PRODUCTION HEAD</p>
-            </div>
-            <img
-              class="single-founder__img active-img"
-              src="./assets/img/founder1.png"
-              alt="ALEXANDRE MARTEL"
-            />
-            <img
-              class="single-founder__img nonactive-img"
-              src="./assets/img/founder1nonactive.png"
-              alt="ALEXANDRE MARTEL"
-            />
-          </div>
-          <button class="btn btn-founder-changer">
+                            <div class="border__bottom"></div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="section-about-us__subsec section-about-us__founders active">
+                    <div class="section-about-us__founder active">
+                        <div class="single-founder__header">
+                            <p class="founder__name">ALEXANDRE MARTEL</p>
+                            <p class="founder__position">CEO AND PRODUCTION HEAD</p>
+                        </div>
+                        <img class="single-founder__img active-img" src="./assets/img/founder1.png" alt="ALEXANDRE MARTEL" />
+                        <img class="single-founder__img nonactive-img" src="./assets/img/founder1nonactive.png" alt="ALEXANDRE MARTEL" />
+                    </div>
+                    <button class="btn btn-founder-changer">
             <img
               src="./assets/img/founder-changer-btn.svg"
               alt="Changer icon"
@@ -386,64 +367,57 @@
             <div class="footer__header-social">
               <img src="./assets/img/Twitter.svg" alt="Twitter logo" />
             </div>
-            <div class="footer__header-social">
-              <img src="./assets/img/facebook.svg" alt="Facebook logo" />
+            <div class="footer__content">
+                <a href="#"><img src="./assets/img/logo.svg" alt="3 Mind Games" /></a>
+                <nav class="footer__nav-above">
+                    <ul class="footer__nav__box">
+                        <li class="footer__nav-above__list">
+                            <a class="footer__nav-above__link" href="#">Home</a>
+                        </li>
+                        <div class="footer__nav-above__border"></div>
+                        <li class="footer__nav-above__list">
+                            <a class="footer__nav-above__link" href="#">Games</a>
+                        </li>
+                        <div class="footer__nav-above__border"></div>
+                        <li class="footer__nav-above__list">
+                            <a class="footer__nav-above__link" href="#">Careers</a>
+                        </li>
+                        <div class="footer__nav-above__border"></div>
+                        <li class="footer__nav-above__list">
+                            <a class="footer__nav-above__link" href="#">About us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__copyright-text">
+                    3Mind Games Inc. All rights reserved. Copyrights©2022
+                </p>
+                <nav class="footer__nav-below">
+                    <ul class="footer__nav__box">
+                        <li class="footer__nav-below__list">
+                            <a class="footer__nav-below__link" href="#">Privacy</a>
+                        </li>
+                        <div class="footer__nav-below__border"></div>
+                        <li class="footer__nav-below__list">
+                            <a class="footer__nav-below__link" href="#">Terms</a>
+                        </li>
+                        <div class="footer__nav-below__border"></div>
+                        <li class="footer__nav-below__list">
+                            <a class="footer__nav-below__link" href="#">Cookie Policy</a>
+                        </li>
+                        <div class="footer__nav-below__border"></div>
+                        <li class="footer__nav-below__list">
+                            <a class="footer__nav-below__link" href="#">Legal</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="footer__header-social">
-              <img src="./assets/img/Linkedin.svg" alt="LInkedin logo" />
-            </div>
-          </div>
         </div>
-        <div class="footer__content">
-          <a href="#"><img src="./assets/img/logo.svg" alt="3 Mind Games" /></a>
-          <nav class="footer__nav-above">
-            <ul class="footer__nav__box">
-              <li class="footer__nav-above__list">
-                <a class="footer__nav-above__link" href="#">Home</a>
-              </li>
-              <div class="footer__nav-above__border"></div>
-              <li class="footer__nav-above__list">
-                <a class="footer__nav-above__link" href="#">Games</a>
-              </li>
-              <div class="footer__nav-above__border"></div>
-              <li class="footer__nav-above__list">
-                <a class="footer__nav-above__link" href="#">Careers</a>
-              </li>
-              <div class="footer__nav-above__border"></div>
-              <li class="footer__nav-above__list">
-                <a class="footer__nav-above__link" href="#">About us</a>
-              </li>
-            </ul>
-          </nav>
-          <p class="footer__copyright-text">
-            3Mind Games Inc. All rights reserved. Copyrights©2022
-          </p>
-          <nav class="footer__nav-below">
-            <ul class="footer__nav__box">
-              <li class="footer__nav-below__list">
-                <a class="footer__nav-below__link" href="#">Privacy</a>
-              </li>
-              <div class="footer__nav-below__border"></div>
-              <li class="footer__nav-below__list">
-                <a class="footer__nav-below__link" href="#">Terms</a>
-              </li>
-              <div class="footer__nav-below__border"></div>
-              <li class="footer__nav-below__list">
-                <a class="footer__nav-below__link" href="#">Cookie Policy</a>
-              </li>
-              <div class="footer__nav-below__border"></div>
-              <li class="footer__nav-below__list">
-                <a class="footer__nav-below__link" href="#">Legal</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </footer>
 
     <script src="./assets/js/games-controller.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/upcoming.js"></script>
+    <script src="./assets/js/burger-menu.js"></script>
 </body>
 
 </html>

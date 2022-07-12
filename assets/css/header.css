@@ -149,6 +149,42 @@ h1 {
     display: none;
 }
 
+.mobile-menu-container {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    z-index: 150;
+    background-color: #080707;
+    display: none;
+}
+
+.mobile-menu-nav {
+    display: grid;
+    grid-gap: 32px;
+    margin: 32px;
+}
+
+.mobile-menu-nav li a {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /* SOLID RED/GREY */
+    color: #E6E1E0;
+}
+
+#burger-menu img {
+    display: none;
+}
+
+.show-burger-image {
+    display: block !important;
+}
+
 @media only screen and (max-width: 1280px) {
     .games-controller {
         position: unset !important;
