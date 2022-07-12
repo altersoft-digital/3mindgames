@@ -20,7 +20,7 @@
     justify-content: space-between;
     max-width: 815px;
     margin: auto;
-    padding: 52px;
+    padding: 52px 0;
 }
 
 .header nav ul {
@@ -99,7 +99,8 @@ h1 {
 }
 
 .game-controller-item {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
     gap: 16px;
     cursor: pointer;
@@ -142,4 +143,91 @@ h1 {
 
 .show-hero-game {
     display: grid !important;
+}
+
+#burger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+    .games-controller {
+        position: unset !important;
+        right: unset;
+        top: unset;
+        bottom: unset;
+        height: unset;
+        grid-template-rows: unset;
+        display: grid;
+        align-content: center;
+        grid-auto-flow: column;
+        grid-gap: 24px;
+        z-index: 2;
+        justify-items: end;
+        order: 1;
+        justify-items: center;
+    }
+    .games-controller .line {
+        display: none;
+    }
+    .games-container-container {
+        display: grid;
+    }
+    .section-hero {
+        order: 2;
+    }
+    .section-hero p {
+        font-size: 16px;
+    }
+    .section-hero .game-logo {
+        margin-top: 48px;
+    }
+    .btn-primary-header {
+        margin-top: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .games-controller {
+        grid-auto-flow: row;
+        justify-items: end;
+    }
+    .section-hero {
+        padding-top: 32px;
+    }
+    .header {
+        padding: 32px 0;
+    }
+    .section-hero .game-logo {
+        margin-top: 24px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .hero-game {
+        grid-gap: 16px;
+    }
+    .header-nav-left,
+    .header-nav-right {
+        display: none;
+    }
+    #burger-menu {
+        display: block;
+    }
+    #main-logo {
+        max-width: 40px;
+        height: auto;
+    }
+    .section-hero p {
+        font-size: 14px;
+    }
+    .btn-primary-header {
+        margin-top: 12px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .game-logo {
+        width: 100% !important;
+        height: auto;
+    }
 }

@@ -1,461 +1,504 @@
 @font-face {
-  font-family: "DM Sans";
-  src: url("../fonts/DMSans-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "DM Sans";
+    src: url("../fonts/DMSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "DM Sans";
-  src: url("../fonts/DMSans-Bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "DM Sans";
+    src: url("../fonts/DMSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Orbitron";
-  src: url("../fonts/Orbitron-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Orbitron";
-  src: url("../fonts/Orbitron-Bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Orbitron";
-  src: url("../fonts/Orbitron-ExtraBold.ttf");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron-ExtraBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Orbitron";
-  src: url("../fonts/Orbitron-Black.ttf");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron-Black.ttf");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 *::-webkit-scrollbar {
-  background-color: transparent;
-  width: 8px;
+    background-color: transparent;
+    width: 8px;
 }
 
 *::-webkit-scrollbar-thumb {
-  border-radius: 99px;
-  background-color: #fff;
+    border-radius: 99px;
+    background-color: #fff;
 }
 
 ::selection {
-  color: #080707;
-  background: #080707;
+    color: #080707;
+    background: #080707;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  scrollbar-width: 0;
-  transition: 0.2s ease-in-out;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scrollbar-width: 0;
+    transition: 0.2s ease-in-out;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: #080707;
-  color: #fff;
-  font-family: "DM Sans";
-  font-weight: 400;
-  font-style: normal;
+    background-color: #080707;
+    color: #fff;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-style: normal;
 }
 
 a,
 input,
 textarea,
 button {
-  color: #fff;
-  font-family: "DM Sans";
-  font-weight: 400;
+    color: #fff;
+    font-family: "DM Sans";
+    font-weight: 400;
 }
 
 .out-container {
-  max-width: 1776px;
-  margin: auto;
+    max-width: 1776px;
+    margin: auto;
 }
 
 .container {
-  margin: 0 48px;
+    margin: 0 48px;
 }
 
 .img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 button {
-  background: none;
-  outline: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .btn-primary {
-  border: 1px solid #fffbfa;
-  position: relative;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  grid-gap: 16px;
-  padding: 24px 64px;
-  border: 1px solid #fffbfa;
+    border: 1px solid #fffbfa;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 16px;
+    padding: 24px 64px;
+    border: 1px solid #fffbfa;
 }
 
 .btn-hoverline {
-  position: absolute;
-  right: -4px;
-  bottom: -4px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #fffbfa;
-  display: none;
+    position: absolute;
+    right: -4px;
+    bottom: -4px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fffbfa;
+    display: none;
 }
 
-.btn-primary:hover > .btn-hoverline {
-  display: block;
+.btn-primary:hover>.btn-hoverline {
+    display: block;
 }
 
 .center-text {
-  text-align: center;
+    text-align: center;
 }
+
 
 /******************************SECTION ABOUT US STYLES**************************/
 
 .section-about-us__container {
-  display: flex;
-  flex-direction: column;
-  gap: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
 }
 
 .section-about-us {
-  margin-top: 120px;
+    margin-top: 120px;
 }
 
 .section-about-us__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
 }
 
 .section-about-us__heading {
-  display: flex;
-  align-items: center;
-  gap: 100px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
 }
 
 .section-about-us__heading img {
-  width: 42px;
+    width: 42px;
 }
 
 .left-arrow {
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .heading-secondary {
-  font-family: "Orbitron";
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 60px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fffbfa;
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fffbfa;
 }
+
 
 /*  NAV */
 
 .section-about-us__nav-box {
-  display: flex;
-  align-items: flex-end;
-  gap: 48px;
-  height: 64px;
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+    height: 64px;
 }
 
 .section-about-us__nav-list {
-  cursor: pointer;
-  transition: all 0.4s;
+    cursor: pointer;
+    transition: all 0.4s;
 }
 
 .section-about-us__nav-link {
-  font-family: "Orbitron";
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #e6e1e0;
-  opacity: 0.48;
-  transition: all 0.4s;
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e6e1e0;
+    opacity: 0.48;
+    transition: all 0.4s;
 }
 
 .border__bottom {
-  transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .section-about-us__nav-list.active .section-about-us__nav-link,
 .section-about-us__nav-list:hover .section-about-us__nav-link {
-  font-size: 32px;
-  line-height: 40px;
-  opacity: 1;
+    font-size: 32px;
+    line-height: 40px;
+    opacity: 1;
 }
 
 .section-about-us__nav-list.active .border__bottom,
 .section-about-us__nav-list:hover .border__bottom {
-  margin-top: 8px;
-  height: 14px;
-  background: radial-gradient(
-    45.66% 55.87% at 50% 50%,
-    #e1261c 0%,
-    #e22c1f 11.52%,
-    #e53826 25%,
-    rgba(231, 72, 49, 0.7243) 50.22%,
-    rgba(235, 106, 81, 0.18) 100%
-  );
+    margin-top: 8px;
+    height: 14px;
+    background: radial-gradient( 45.66% 55.87% at 50% 50%, #e1261c 0%, #e22c1f 11.52%, #e53826 25%, rgba(231, 72, 49, 0.7243) 50.22%, rgba(235, 106, 81, 0.18) 100%);
 }
+
 
 /* FOUNDERS */
 
 .section-about-us__founders {
-  grid-template-columns: 55fr auto 40fr;
-  gap: 260px;
-  align-items: center;
+    grid-template-columns: 55fr auto 40fr;
+    gap: 260px;
+    align-items: center;
 }
 
 .section-about-us__founder {
-  grid-column: 3;
-  grid-row: 1 / 2;
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-  transition: all 0.3s;
+    grid-column: 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    transition: all 0.3s;
 }
 
 .section-about-us__founder.active {
-  grid-column: 1;
+    grid-column: 1;
 }
 
 .founder__name {
-  font-family: "Orbitron";
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fffbfa;
-  opacity: 0.64;
-  transition: all 0.3s;
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fffbfa;
+    opacity: 0.64;
+    transition: all 0.3s;
 }
 
 .section-about-us__founder.active .founder__name {
-  font-size: 32px;
-  line-height: 40px;
-  opacity: 1;
+    font-size: 32px;
+    line-height: 40px;
+    opacity: 1;
 }
 
 .founder__position {
-  margin-top: 16px;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #e6e1e0;
-  opacity: 0.64;
-  transition: all 0.3s;
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e6e1e0;
+    opacity: 0.64;
+    transition: all 0.3s;
 }
 
 .section-about-us__founder.active .founder__position {
-  font-size: 24px;
-  line-height: 31px;
-  background: linear-gradient(180deg, #f3f1f0 0%, #646569 55%, #232221 96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  opacity: 1;
+    font-size: 24px;
+    line-height: 31px;
+    background: linear-gradient(180deg, #f3f1f0 0%, #646569 55%, #232221 96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 1;
 }
 
 .single-founder__img {
-  width: 100%;
-  transition: all 0.3s;
+    width: 100%;
+    transition: all 0.3s;
 }
 
 .btn-founder-changer {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .founder-changer {
-  max-width: 97px;
+    max-width: 97px;
 }
+
 .active-img {
-  display: none;
+    display: none;
 }
 
 .section-about-us__founder.active .active-img {
-  display: inline-block;
+    display: inline-block;
 }
 
 .section-about-us__founder.active .nonactive-img {
-  display: none;
+    display: none;
 }
 
 .section-about-us__missions {
-  width: 500px;
-  height: 500px;
-  background-color: #e1261c;
+    width: 500px;
+    height: 500px;
+    background-color: #e1261c;
 }
+
 .section-about-us__origins {
-  width: 500px;
-  height: 500px;
-  background-color: #1b3291;
+    width: 500px;
+    height: 500px;
+    background-color: #1b3291;
 }
+
 .section-about-us__new-talents {
-  width: 500px;
-  height: 500px;
-  background-color: #a15910;
-  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    width: 500px;
+    height: 500px;
+    background-color: #a15910;
+    clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
+
 .section-about-us__subsec {
-  display: none;
+    display: none;
 }
 
 .section-about-us__subsec.active {
-  display: grid;
+    display: grid;
 }
+
 
 /******************************FOOTER STYLES**************************/
 
 .footer {
-  margin-top: 152px;
-  margin-bottom: 80px;
+    margin-top: 152px;
+    margin-bottom: 80px;
 }
 
 .footer__header {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  align-items: center;
-  justify-items: center;
-  gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 80px;
 }
 
 .heading-tertiary {
-  font-family: "Orbitron";
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 48px;
-  letter-spacing: 0.04em;
-  color: #fffbfa;
-  width: max-content;
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    color: #fffbfa;
+    width: max-content;
 }
 
 .footer__header-border {
-  border: 1px solid #fffbfa;
-  opacity: 0.08;
-  width: 100%;
+    border: 1px solid #fffbfa;
+    opacity: 0.08;
+    width: 100%;
 }
 
 .footer__header-socials {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
 }
 
 .footer__header-social img {
-  width: 32px;
-  height: 32px;
+    width: 32px;
+    height: 32px;
 }
+
 
 /* footer nav */
 
 .footer__content {
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__nav-above {
-  margin-top: 32px;
+    margin-top: 32px;
 }
 
 .footer__nav__box {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .footer__nav-above__link:link,
 .footer__nav-above__link:visited {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  color: #e6e1e0;
-  width: max-content;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #e6e1e0;
+    width: max-content;
 }
 
 .footer__nav-above__link:hover,
 .footer__nav-above__link:active {
-  color: rgba(230, 225, 224, 0.8);
+    color: rgba(230, 225, 224, 0.8);
 }
 
 .footer__nav-above__border {
-  border: 1px solid #e6e1e0;
-  opacity: 0.38;
-  width: 2px;
-  height: 8px;
+    border: 1px solid #e6e1e0;
+    opacity: 0.38;
+    width: 2px;
+    height: 8px;
 }
 
 .footer__copyright-text {
-  margin-top: 24px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #e6e1e0;
-  opacity: 0.64;
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #e6e1e0;
+    opacity: 0.64;
 }
+
 
 /* below nav */
 
 .footer__nav-below {
-  margin-top: 24px;
+    margin-top: 24px;
 }
 
 .footer__nav-below__link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  color: #e6e1e0;
-  opacity: 0.4;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #e6e1e0;
+    opacity: 0.4;
 }
 
 .footer__nav-below__border {
-  width: 2px;
-  height: 4px;
-  background: #e6e1e0;
-  opacity: 0.38;
+    width: 2px;
+    height: 4px;
+    background: #e6e1e0;
+    opacity: 0.38;
+}
+
+@media only screen and (max-width: 1280px) {
+    .heading-secondary {
+        font-family: "Orbitron";
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 58px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #fffbfa;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .heading-secondary {
+        font-family: "Orbitron";
+        font-weight: 900;
+        font-size: 18px;
+        line-height: unset;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #fffbfa;
+    }
+    .btn-primary {
+        border: 1px solid #fffbfa;
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-gap: 12px;
+        padding: 12px 40px;
+    }
+    button {
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
 }
