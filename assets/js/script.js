@@ -14,7 +14,7 @@ function LetsDisplay(btn, section) {
   const activeEls = document.querySelectorAll(".active");
   Array.prototype.forEach.call(activeEls, (item) => {
     if (
-      item.classList.contains("section-about-us__subsec") &&
+      item.classList.contains("section-about-us__subsec") ||
       item.classList.contains("section-about-us__nav-list")
     ) {
       item.classList.remove("active");
