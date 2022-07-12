@@ -164,9 +164,14 @@ button {
 }
 
 .section-about-us__heading {
-  display: flex;
+  display: grid;
   align-items: center;
-  gap: 100px;
+  gap: 16px;
+  max-width: 857px;
+  width: 100%;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .section-about-us__heading img {
@@ -555,6 +560,7 @@ input {
   text-transform: uppercase;
   color: #fffbfa;
 }
+
 .sub-heading {
   font-family: "Orbitron";
   font-weight: 900;
@@ -601,6 +607,8 @@ input {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__nav-above__link:link,
@@ -630,6 +638,7 @@ input {
   line-height: 18px;
   color: #e6e1e0;
   opacity: 0.64;
+  text-align: center;
 }
 
 /* below nav */
@@ -795,5 +804,62 @@ input {
 
   .section-about-us__founder.active .founder__position {
     display: inline-block;
+  }
+  .heading-secondary {
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 58px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fffbfa;
+  }
+  .sub-heading {
+    font-size: 20px;
+  }
+  .footer__header-socials img {
+    width: 24px;
+    height: 24px;
+  }
+  .footer__header-socials {
+    gap: 24px;
+  }
+  .footer__header {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .heading-secondary {
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: unset;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fffbfa;
+  }
+  .btn-primary {
+    border: 1px solid #fffbfa;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 12px;
+    padding: 12px 40px;
+  }
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer__header {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
   }
 }
