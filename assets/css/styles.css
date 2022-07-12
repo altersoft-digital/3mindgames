@@ -145,6 +145,12 @@ button {
 
 /******************************SECTION ABOUT US STYLES**************************/
 
+.section-about-us__container {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
 .section-about-us {
   margin-top: 120px;
 }
@@ -234,15 +240,110 @@ button {
 
 /* FOUNDERS */
 
-.section-about-us__founders-img {
-  height: 25vh;
-  width: 25vh;
-  background: linear-gradient(
-    to right bottom,
-    rgba(126, 213, 111, 0.8),
-    rgba(40, 180, 133, 0.8)
-  );
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+.section-about-us__founders {
+  grid-template-columns: 55fr auto 40fr;
+  gap: 260px;
+  align-items: center;
+}
+
+.section-about-us__founder {
+  grid-column: 3;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  transition: all 0.3s;
+}
+
+.section-about-us__founder.active {
+  grid-column: 1;
+}
+
+.founder__name {
+  font-family: "Orbitron";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fffbfa;
+  opacity: 0.64;
+  transition: all 0.3s;
+}
+
+.section-about-us__founder.active .founder__name {
+  font-size: 32px;
+  line-height: 40px;
+  opacity: 1;
+}
+
+.founder__position {
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e6e1e0;
+  opacity: 0.64;
+  transition: all 0.3s;
+}
+
+.section-about-us__founder.active .founder__position {
+  font-size: 24px;
+  line-height: 31px;
+  background: linear-gradient(180deg, #f3f1f0 0%, #646569 55%, #232221 96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 1;
+}
+
+.single-founder__img {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.btn-founder-changer {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.founder-changer {
+  max-width: 97px;
+}
+.active-img {
+  display: none;
+}
+
+.section-about-us__founder.active .active-img {
+  display: inline-block;
+}
+
+.section-about-us__founder.active .nonactive-img {
+  display: none;
+}
+
+.section-about-us__missions {
+  width: 500px;
+  height: 500px;
+  background-color: #e1261c;
+}
+.section-about-us__origins {
+  width: 500px;
+  height: 500px;
+  background-color: #1b3291;
+}
+.section-about-us__new-talents {
+  width: 500px;
+  height: 500px;
+  background-color: #a15910;
+}
+.section-about-us__subsec {
+  display: none;
+}
+
+.section-about-us__subsec.active {
+  display: grid;
 }
 
 /******************************FOOTER STYLES**************************/
