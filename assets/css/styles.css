@@ -136,6 +136,33 @@ button {
 }
 
 
+/******************************SECTION ABOUT US STYLES**************************/
+
+.section-about-us__heading {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.section-about-us__heading img {
+    width: 42px;
+}
+
+.left-arrow {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.heading-secondary {
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fffbfa;
+}
+
+
 /******************************FOOTER STYLES**************************/
 
 .footer {
