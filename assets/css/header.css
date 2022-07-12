@@ -36,7 +36,7 @@
     grid-gap: 24px;
 }
 
-#hero-game-1 {
+.hero-game {
     display: none;
 }
 
@@ -126,6 +126,10 @@ h1 {
     color: rgba(255, 251, 250, 1);
 }
 
-#btn-primary-header {
+.btn-primary-header {
     margin-top: 76px;
+}
+
+.show-hero-game {
+    display: grid !important;
 }
