@@ -352,3 +352,43 @@ button {
     background: #e6e1e0;
     opacity: 0.38;
 }
+
+@media only screen and (max-width: 1280px) {
+    .heading-secondary {
+        font-family: "Orbitron";
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 58px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #fffbfa;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .heading-secondary {
+        font-family: "Orbitron";
+        font-weight: 900;
+        font-size: 18px;
+        line-height: unset;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #fffbfa;
+    }
+    .btn-primary {
+        border: 1px solid #fffbfa;
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-gap: 12px;
+        padding: 12px 40px;
+    }
+    button {
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
