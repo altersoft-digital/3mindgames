@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+*::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 99px;
+    background-color: #fff;
+}
+
+::selection {
+    color: #080707;
+    background: #080707;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    scrollbar-width: 0;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+body {
+    background-color: #080707;
+}
+
+.out-container {
+    max-width: 1776px;
+    margin: auto;
+}
+
+.container {
+    margin: 0 48px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
