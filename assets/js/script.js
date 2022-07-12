@@ -10,11 +10,15 @@ ChangerBtn.addEventListener("click", function () {
 
 // about us nav logic
 
-let activeEls = document.querySelectorAll(".active");
-
 function LetsDisplay(btn, section) {
+  const activeEls = document.querySelectorAll(".active");
   Array.prototype.forEach.call(activeEls, (item) => {
-    item.classList.remove("active");
+    if (
+      item.classList.contains("section-about-us__subsec") &&
+      item.classList.contains("section-about-us__nav-list")
+    ) {
+      item.classList.remove("active");
+    }
   });
   if (!document.querySelector(btn).classList.contains("active")) {
     document.querySelector(btn).classList.add("active");

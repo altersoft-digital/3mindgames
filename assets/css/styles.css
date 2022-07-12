@@ -337,6 +337,7 @@ button {
   width: 500px;
   height: 500px;
   background-color: #a15910;
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 .section-about-us__subsec {
   display: none;
@@ -344,16 +345,6 @@ button {
 
 .section-about-us__subsec.active {
   display: grid;
-}
-.section-about-us__founders-img {
-  height: 25vh;
-  width: 25vh;
-  background: linear-gradient(
-    to right bottom,
-    rgba(126, 213, 111, 0.8),
-    rgba(40, 180, 133, 0.8)
-  );
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 /******************************FOOTER STYLES**************************/
