@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/news.css" />
+    <link rel="stylesheet" href="./assets/css/upcoming-games.css" />
     <link rel="icon" type="image/svg" sizes="16x16" href="./assets/img/favicon.svg" />
     <title>3 Mind Games</title>
 </head>
@@ -50,7 +51,7 @@
                     <div class="hero-game show-hero-game" id="hero-game-1">
                         <h1 class="heading-secondary">Welcome to 3Mind Games</h1>
                         <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
-                        <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" class="game-logo">
+                        <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" class="game-logo img">
 
                         <a href="#"><button class="btn-primary btn-primary-header">
                             <span>Visit</span>
@@ -62,7 +63,7 @@
                     <div class="hero-game" id="hero-game-2">
                         <h2 class="heading-secondary center-text">Welcome to 3Mind Games</h2>
                         <p>We create passionate, rich, and emotionally engaging games with deep story lines and memorable characters</p>
-                        <img src="./assets/img/theprotagonist-logo.png" alt="Shadow's Light" class="game-logo">
+                        <img src="./assets/img/theprotagonist-logo.png" alt="Shadow's Light" class="game-logo img">
 
                         <a href="#"><button class="btn-primary btn-primary-header">
                             <span>Visit</span>
@@ -98,7 +99,7 @@
         <div class="container news-container">
             <div class="news-item">
                 <div class="left-side">
-                    <img src="./assets/img/choose-your-side.png" alt="Choose Your Side">
+                    <img class="img" src="./assets/img/choose-your-side.png" alt="Choose Your Side">
                 </div>
                 <div class="right-side">
                     <h2 class="heading-secondary">Choose your side</h2>
@@ -113,7 +114,52 @@
                     <p class="news-p">In a barren & unforgiving eastern land, an orc chieftain stumbles upon a mysterious parched and withering woman, whose premonition could be the key to saving his clan and bringing down the Holy Kingdom.</p>
                 </div>
                 <div class="left-side">
-                    <img src="./assets/img/demons-and-orcs.png" alt="Demons and Orcs">
+                    <img class="img" src="./assets/img/demons-and-orcs.png" alt="Demons and Orcs">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="out-container out-container-upcoming-games">
+        <div class="container container-upcoming-games">
+            <div class="section-about-us__heading">
+                <img class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon">
+                <h2 class="heading-secondary">Upcoming Games</h2>
+                <img class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon">
+            </div>
+
+            <div class="main-upcoming-games">
+                <div class="left-side">
+                    <img src="./assets/img/shadows_light_logo.png" alt="Shadow's Light" id="upcoming-logo">
+                    <p class="upcoming-p">
+                        The long stalemate of war is about to be broken. On one side, a kingdom blessed by benevolent gods. On the other, a land crawling with monsters. The truth will soon be revealed...
+                        <br><br> But all is not yet lost for humanity. The king musters a cohort of elite paladins for a secret and perilous mission that could end the threat once and for all.
+                    </p>
+                    <div class="upcoming-socials-container">
+                        <a href="#"><img src="./assets/img/steam.svg" alt="Steam"></a>
+                        <a href="#"><img src="./assets/img/sony.svg" alt="Playstation"></a>
+                        <a href="#"><img src="./assets/img/xbox.svg" alt="Xbox"></a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="upcoming-button-container"><button class="btn-primary btn-primary-header">
+                            <span>Visit</span>
+                            <img src="./assets/img/arrow-up-corner.svg" alt="Visit">
+                            <div class="btn-hoverline"></div>
+                        </button></a>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="upcoming-main-image">
+                        <div class="main-image-1" id="upcoming-main-image-inside"></div>
+                        <img src="./assets/img/play-button.svg" alt="Play" id="play">
+                    </div>
+                    <div class="upcoming-small-images-container">
+                        <img onclick="changepicture('1')" class="active-small-image" src="./assets/img/upcoming-image-1.jpg" alt="Upcoming Image 1">
+                        <img onclick="changepicture('2')" src="./assets/img/upcoming-image-2.jpg" alt="Upcoming Image 2">
+                        <img onclick="changepicture('3')" src="./assets/img/upcoming-image-3.jpg" alt="Upcoming Image 3">
+                        <img onclick="changepicture('4')" src="./assets/img/upcoming-image-4.jpg" alt="Upcoming Image 4">
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,7 +196,7 @@
             </div>
             <div class="section-about-us__founders">
                 <div class="section-about-us__founders-img">
-                    
+
                 </div>
             </div>
         </div>
@@ -221,6 +267,7 @@
     </footer>
 
     <script src="./assets/js/games-controller.js"></script>
+    <script src="./assets/js/upcoming.js"></script>
 </body>
 
 </html>
