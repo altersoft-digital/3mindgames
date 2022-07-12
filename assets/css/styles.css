@@ -115,14 +115,14 @@ button {
 }
 
 .btn-primary {
-    border: 1px solid #FFFBFA;
+    border: 1px solid #fffbfa;
     position: relative;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     grid-gap: 16px;
     padding: 24px 64px;
-    border: 1px solid #FFFBFA;
+    border: 1px solid #fffbfa;
 }
 
 .btn-hoverline {
@@ -131,7 +131,7 @@ button {
     bottom: -4px;
     width: 100%;
     height: 100%;
-    border: 1px solid #FFFBFA;
+    border: 1px solid #fffbfa;
     display: none;
 }
 
@@ -145,6 +145,18 @@ button {
 
 
 /******************************SECTION ABOUT US STYLES**************************/
+
+.section-about-us {
+    margin-top: 120px;
+}
+
+.section-about-us__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
 
 .section-about-us__heading {
     display: flex;
@@ -168,6 +180,61 @@ button {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fffbfa;
+}
+
+
+/*  NAV */
+
+.section-about-us__nav-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+    height: 64px;
+}
+
+.section-about-us__nav-list {
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.section-about-us__nav-link {
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e6e1e0;
+    opacity: 0.48;
+    transition: all 0.4s;
+}
+
+.border__bottom {
+    transition: all 0.4s;
+}
+
+.section-about-us__nav-list.active .section-about-us__nav-link,
+.section-about-us__nav-list:hover .section-about-us__nav-link {
+    font-size: 32px;
+    line-height: 40px;
+    opacity: 1;
+}
+
+.section-about-us__nav-list.active .border__bottom,
+.section-about-us__nav-list:hover .border__bottom {
+    margin-top: 8px;
+    height: 14px;
+    background: radial-gradient( 45.66% 55.87% at 50% 50%, #e1261c 0%, #e22c1f 11.52%, #e53826 25%, rgba(231, 72, 49, 0.7243) 50.22%, rgba(235, 106, 81, 0.18) 100%);
+}
+
+
+/* FOUNDERS */
+
+.section-about-us__founders-img {
+    height: 25vh;
+    width: 25vh;
+    background: linear-gradient( to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 
