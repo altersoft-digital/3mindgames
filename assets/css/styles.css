@@ -316,6 +316,7 @@ button {
 .btn-founder-changer {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  margin-top: 60px;
 }
 
 .founder-changer {
@@ -757,9 +758,25 @@ input {
     font-size: 16px;
     line-height: 21px;
   }
+
+  .New-talents__NEW {
+    display: none;
+  }
+
+  .section-about-us__container,
+  .section-about-us__header {
+    gap: 120px;
+  }
+
+  .section-about-us__missions {
+    gap: 48px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
+  .container {
+    margin: 0 24px;
+  }
   .heading-secondary {
     font-family: "Orbitron";
     font-weight: 900;
@@ -768,6 +785,7 @@ input {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fffbfa;
+    text-align: center;
   }
   .btn-primary {
     border: 1px solid #fffbfa;
@@ -805,15 +823,6 @@ input {
   .section-about-us__founder.active .founder__position {
     display: inline-block;
   }
-  .heading-secondary {
-    font-family: "Orbitron";
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 58px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fffbfa;
-  }
   .sub-heading {
     font-size: 20px;
   }
@@ -827,33 +836,88 @@ input {
   .footer__header {
     gap: 24px;
   }
+
+  .section-about-us__nav-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section-about-us__nav-list.active .section-about-us__nav-link,
+  .section-about-us__nav-list:hover .section-about-us__nav-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
-@media only screen and (max-width: 680px) {
-  .heading-secondary {
-    font-family: "Orbitron";
-    font-weight: 900;
-    font-size: 18px;
-    line-height: unset;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fffbfa;
+@media only screen and (max-width: 580px) {
+  .founder-changer {
+    max-width: 24px;
+    max-height: 28px;
   }
-  .btn-primary {
-    border: 1px solid #fffbfa;
-    position: relative;
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    grid-gap: 12px;
-    padding: 12px 40px;
-  }
-  button {
-    background: none;
-    outline: none;
-    border: none;
+
+  .section-about-us__founder.active .founder__name {
     font-size: 16px;
-    cursor: pointer;
+    line-height: 20px;
+  }
+
+  .section-about-us__founder.active .founder__position {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section-about-us__founder.active {
+    max-width: 120px;
+    gap: 32px;
+  }
+
+  .founder__position {
+    margin-top: 8px;
+  }
+
+  .section-about-us__founder {
+    max-width: 80px;
+  }
+
+  .section-about-us__nav-box {
+    gap: 10px;
+  }
+
+  .about-founders {
+    margin-top: 42px;
+    padding: 16px 8px;
+  }
+
+  .about-founders p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section-about-us__container,
+  .section-about-us__header {
+    gap: 48px;
+  }
+
+  .missions__heading {
+    grid-column: 1;
+  }
+  .section__missions-values-cont {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .heading-tertiary {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .missions-header__subheading {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section-about-us__missions {
+    gap: 48px;
   }
 }
 
