@@ -2,13 +2,17 @@
 let FounderEls = document.querySelectorAll(".section-about-us__founder");
 let ChangerBtn = document.querySelector(".btn-founder-changer");
 
-ChangerBtn.addEventListener("click", function () {
+function changeFounder() {
   Array.prototype.forEach.call(FounderEls, (item) => {
     item.classList.toggle("active");
   });
-});
+}
 
 // about us nav logic
+
+let btnArray = ['#founders', '#mission', '#origins', '#newTalents'];
+let sectionArray = ['.section-about-us__founders', '.section-about-us__missions', '.section-about-us__origins', '.section-about-us__new-talents'];
+let currChar = 0;
 
 function LetsDisplay(btn, section) {
   const activeEls = document.querySelectorAll(".active");
@@ -25,5 +29,25 @@ function LetsDisplay(btn, section) {
   }
   if (!document.querySelector(section).classList.contains("active")) {
     document.querySelector(section).classList.add("active");
+  }
+}
+
+function nextDisplay() {
+  if(currChar == 3) {
+    currChar = 0;
+    LetsDisplay(btnArray[currChar], sectionArray[currChar]);
+  } else {
+    LetsDisplay(btnArray[currChar+1], sectionArray[currChar+1]);
+    currChar++;
+  }
+}
+
+function prevDisplay() {
+  if(currChar == 0) {
+    currChar = 3;
+    LetsDisplay(btnArray[currChar], sectionArray[currChar]);
+  } else {
+    LetsDisplay(btnArray[currChar-1], sectionArray[currChar-1]);
+    currChar--;
   }
 }

@@ -1,5 +1,6 @@
 .wrap-news {
     padding: 80px 0;
+    display: none;
 }
 
 .news-container {
