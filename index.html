@@ -23,14 +23,14 @@
     <div class="wrap-hero wrap-hero-game-1">
         <div class="out-container out-container-header">
             <div class="container">
-                <header class="header">
+                <header class="header" id="home">
                     <nav class="header-nav-left">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#home">Home</a>
                             </li>
                             <li>
-                                <a href="#">Games</a>
+                                <a href="#wrap-news-1">About game</a>
                             </li>
                         </ul>
                     </nav>
@@ -38,10 +38,10 @@
                     <nav class="header-nav-right">
                         <ul>
                             <li>
-                                <a href="#">Careers</a>
+                                <a href="#aboutus" onclick="LetsDisplay('#newTalents', '.section-about-us__new-talents')">Careers</a>
                             </li>
                             <li>
-                                <a href="#">About us</a>
+                                <a href="#aboutus" onclick="LetsDisplay('#founders', '.section-about-us__founders')">About us</a>
                             </li>
                         </ul>
                     </nav>
@@ -216,9 +216,7 @@
     <div class="out-game-mechanics out-container">
         <div class="container game-mechanics-container">
             <div class="section-about-us__heading">
-                <img class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon" />
                 <h2 class="heading-secondary">Game Mechanics</h2>
-                <img class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon" />
             </div>
             <div class="mechanics-main">
                 <div class="mechanics-item">
@@ -284,9 +282,9 @@
     <div class="out-characters out-container">
         <div class="container characters-container">
             <div class="section-about-us__heading">
-                <img class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon" />
+                <img onclick="prevChar()" class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon" />
                 <h2 class="heading-secondary">CHARACTERS</h2>
-                <img class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon" />
+                <img onclick="nextChar()" class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon" />
             </div>
             <div class="characters-main">
                 <div class="character-big">
@@ -352,9 +350,9 @@
     <div class="out-container out-container-upcoming-games">
         <div class="container container-upcoming-games">
             <div class="section-about-us__heading">
-                <img class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon" />
+                <img onclick="prevpic()" class="left-arrow" src="./assets/img/arrow.svg" alt="Arrow left icon" />
                 <h2 class="heading-secondary">Upcoming Games</h2>
-                <img class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon" />
+                <img onclick="nextpic()" class="right-arrow" src="./assets/img/arrow.svg" alt="Arrow right icon" />
             </div>
 
             <div class="main-upcoming-games">
@@ -393,7 +391,7 @@
         </div>
     </div>
 
-    <section class="section-about-us out-container">
+    <section class="section-about-us out-container" id="aboutus">
         <div class="container section-about-us__container">
             <div class="section-about-us__header">
                 <div class="section-about-us__heading">

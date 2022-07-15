@@ -4,6 +4,10 @@
     display: none;
 }
 
+.out-characters .section-about-us__heading img {
+    cursor: pointer;
+}
+
 .small-characters-out {
     display: grid;
     grid-auto-flow: column;

@@ -1,5 +1,5 @@
 .container-upcoming-games .section-about-us__heading {
-    /* justify-content: center; */
+    cursor: pointer;
 }
 
 .container-upcoming-games {

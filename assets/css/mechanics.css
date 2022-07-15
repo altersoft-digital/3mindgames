@@ -2,6 +2,10 @@
     display: none;
 }
 
+.out-game-mechanics .section-about-us__heading {
+    justify-content: center;
+}
+
 .mechanics-main {
     display: grid;
     grid-auto-flow: column;
