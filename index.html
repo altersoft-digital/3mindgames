@@ -27,10 +27,10 @@
                     <nav class="header-nav-left">
                         <ul>
                             <li>
-                                <a href="#home">Home</a>
+                                <a href="#wrap-news-1">Games</a>
                             </li>
                             <li>
-                                <a href="#wrap-news-1">About game</a>
+                                <a href="#aboutus" onclick="LetsDisplay('#mission', '.section-about-us__missions')">Mission</a>
                             </li>
                         </ul>
                     </nav>
@@ -64,16 +64,16 @@
                         <div class="mobile-menu-header">
                             <ul class="mobile-menu-nav">
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="#wrap-news-1" onclick="closemenu()">Games</a>
                                 </li>
                                 <li>
-                                    <a href="#">Games</a>
+                                    <a href="#aboutus" onclick="closemenu(); LetsDisplay('#mission', '.section-about-us__missions')">Mission</a>
                                 </li>
                                 <li>
-                                    <a href="#">Careers</a>
+                                    <a href="#aboutus" onclick="closemenu(); LetsDisplay('#newTalents', '.section-about-us__new-talents')">Careers</a>
                                 </li>
                                 <li>
-                                    <a href="#">About us</a>
+                                    <a href="#aboutus" onclick="closemenu(); LetsDisplay('#founders', '.section-about-us__founders')">About us</a>
                                 </li>
                             </ul>
                         </div>
@@ -619,19 +619,19 @@
                 <nav class="footer__nav-above">
                     <ul class="footer__nav__box">
                         <li class="footer__nav-above__list">
-                            <a class="footer__nav-above__link" href="#home">Home</a>
-                        </li>
-                        <div class="footer__nav-above__border"></div>
-                        <li class="footer__nav-above__list">
                             <a class="footer__nav-above__link" href="#wrap-news-1">Games</a>
                         </li>
                         <div class="footer__nav-above__border"></div>
                         <li class="footer__nav-above__list">
-                            <a class="footer__nav-above__link" onclick="LetsDisplay('#newTalents', '.section-about-us__new-talents')">Careers</a>
+                            <a class="footer__nav-above__link" href="#aboutus" onclick="LetsDisplay('#mission', '.section-about-us__missions')">Mission</a>
                         </li>
                         <div class="footer__nav-above__border"></div>
                         <li class="footer__nav-above__list">
-                            <a class="footer__nav-above__link" href="#aboutus" onclick="LetsDisplay('#newTalents', '.section-about-us__new-talents')">About us</a>
+                            <a class="footer__nav-above__link" href="#aboutus" onclick="LetsDisplay('#newTalents', '.section-about-us__new-talents')">Careers</a>
+                        </li>
+                        <div class="footer__nav-above__border"></div>
+                        <li class="footer__nav-above__list">
+                            <a class="footer__nav-above__link" href="#aboutus" onclick="LetsDisplay('#founders', '.section-about-us__founders')">About us</a>
                         </li>
                     </ul>
                 </nav>
