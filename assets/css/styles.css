@@ -1,913 +1,918 @@
 @font-face {
-    font-family: "DM Sans";
-    src: url("../fonts/DMSans-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "DM Sans";
-    src: url("../fonts/DMSans-Bold.ttf");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Orbitron";
-    src: url("../fonts/Orbitron-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Orbitron";
-    src: url("../fonts/Orbitron-Bold.ttf");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Orbitron";
-    src: url("../fonts/Orbitron-ExtraBold.ttf");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Orbitron";
-    src: url("../fonts/Orbitron-Black.ttf");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 *::-webkit-scrollbar {
-    background-color: transparent;
-    width: 8px;
+  background-color: transparent;
+  width: 8px;
 }
 
 *::-webkit-scrollbar-thumb {
-    border-radius: 99px;
-    background-color: #fff;
+  border-radius: 99px;
+  background-color: #fff;
 }
 
 ::selection {
-    color: #080707;
-    background: #080707;
+  color: #080707;
+  background: #080707;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    scrollbar-width: 0;
-    transition: 0.2s ease-in-out;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scrollbar-width: 0;
+  transition: 0.2s ease-in-out;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #080707;
-    color: #fff;
-    font-family: "DM Sans";
-    font-weight: 400;
-    font-style: normal;
+  background-color: #080707;
+  color: #fff;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-style: normal;
 }
 
 a,
 input,
 textarea,
 button {
-    color: #fff;
-    font-family: "DM Sans";
-    font-weight: 400;
+  color: #fff;
+  font-family: "DM Sans";
+  font-weight: 400;
 }
 
 .out-container {
-    max-width: 1776px;
-    margin: auto;
+  max-width: 1776px;
+  margin: auto;
 }
 
 .container {
-    margin: 0 48px;
+  margin: 0 48px;
 }
 
 .img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 button {
-    background: none;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .display-grid {
-    display: grid !important;
+  display: grid !important;
 }
 
 .display-block {
-    display: block !important;
+  display: block !important;
 }
 
 .btn-primary {
-    border: 1px solid #fffbfa;
-    position: relative;
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    grid-gap: 16px;
-    padding: 24px 64px;
-    border: 1px solid #fffbfa;
+  border: 1px solid #fffbfa;
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 16px;
+  padding: 24px 64px;
+  border: 1px solid #fffbfa;
 }
 
 .btn-hoverline {
-    position: absolute;
-    right: -4px;
-    bottom: -4px;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #fffbfa;
-    display: none;
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fffbfa;
+  display: none;
 }
 
-.btn-primary:hover>.btn-hoverline {
-    display: block;
+.btn-primary:hover > .btn-hoverline {
+  display: block;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
-
 
 /******************************SECTION ABOUT US STYLES**************************/
 
 .section-about-us__container {
-    display: flex;
-    flex-direction: column;
-    gap: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
 }
 
 .section-about-us .section-about-us__heading img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .section-about-us {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .section-about-us__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
 }
 
 .section-about-us__heading {
-    display: grid;
-    align-items: center;
-    gap: 16px;
-    max-width: 857px;
-    width: 100%;
-    grid-auto-flow: column;
-    justify-content: space-between;
-    margin: auto;
+  display: grid;
+  align-items: center;
+  gap: 16px;
+  max-width: 857px;
+  width: 100%;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .section-about-us__heading img {
-    width: 42px;
+  width: 42px;
 }
 
 .left-arrow {
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .heading-secondary {
-    font-family: "Orbitron";
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fffbfa;
+  font-family: "Orbitron";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fffbfa;
 }
-
 
 /*  NAV */
 
 .section-about-us__nav-box {
-    display: flex;
-    align-items: flex-end;
-    gap: 48px;
-    height: 64px;
+  display: flex;
+  align-items: flex-end;
+  gap: 48px;
+  height: 64px;
 }
 
 .section-about-us__nav-list {
-    cursor: pointer;
-    transition: all 0.4s;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
 .section-about-us__nav-link {
-    font-family: "Orbitron";
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #e6e1e0;
-    opacity: 0.48;
-    transition: all 0.4s;
+  font-family: "Orbitron";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e6e1e0;
+  opacity: 0.48;
+  transition: all 0.4s;
 }
 
 .border__bottom {
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .section-about-us__nav-list.active .section-about-us__nav-link,
 .section-about-us__nav-list:hover .section-about-us__nav-link {
-    font-size: 32px;
-    line-height: 40px;
-    opacity: 1;
+  font-size: 32px;
+  line-height: 40px;
+  opacity: 1;
 }
 
 .section-about-us__nav-list.active .border__bottom,
 .section-about-us__nav-list:hover .border__bottom {
-    margin-top: 8px;
-    height: 14px;
-    background: radial-gradient( 45.66% 55.87% at 50% 50%, #e1261c 0%, #e22c1f 11.52%, #e53826 25%, rgba(231, 72, 49, 0.7243) 50.22%, rgba(235, 106, 81, 0.18) 100%);
+  margin-top: 8px;
+  height: 14px;
+  background: radial-gradient(
+    45.66% 55.87% at 50% 50%,
+    #e1261c 0%,
+    #e22c1f 11.52%,
+    #e53826 25%,
+    rgba(231, 72, 49, 0.7243) 50.22%,
+    rgba(235, 106, 81, 0.18) 100%
+  );
 }
-
 
 /* FOUNDERS */
 
 .section-about-us__founders {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
 }
 
 .section-about-us__founder {
-    grid-column: 3;
-    grid-row: 1 / 2;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-    transition: all 0.3s;
-    max-width: 360px;
+  grid-column: 3;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  transition: all 0.3s;
+  max-width: 360px;
 }
 
 .section-about-us__founder.active {
-    grid-column: 1;
-    max-width: 480px;
+  grid-column: 1;
+  max-width: 480px;
 }
 
 .founder__name {
-    font-family: "Orbitron";
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fffbfa;
-    opacity: 0.64;
-    transition: all 0.3s;
+  font-family: "Orbitron";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fffbfa;
+  opacity: 0.64;
+  transition: all 0.3s;
 }
 
 .section-about-us__founder.active .founder__name {
-    font-size: 32px;
-    line-height: 40px;
-    opacity: 1;
+  font-size: 32px;
+  line-height: 40px;
+  opacity: 1;
 }
 
 .founder__position {
-    margin-top: 16px;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #e6e1e0;
-    opacity: 0.64;
-    transition: all 0.3s;
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e6e1e0;
+  opacity: 0.64;
+  transition: all 0.3s;
 }
 
 .section-about-us__founder.active .founder__position {
-    font-size: 24px;
-    line-height: 31px;
-    background: linear-gradient(180deg, #f3f1f0 0%, #646569 55%, #232221 96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    opacity: 1;
+  font-size: 24px;
+  line-height: 31px;
+  background: linear-gradient(180deg, #f3f1f0 0%, #646569 55%, #232221 96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 1;
 }
 
 .single-founder__img {
-    width: 100%;
-    transition: all 0.3s;
+  width: 100%;
+  transition: all 0.3s;
 }
 
 .btn-founder-changer {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    margin-top: 60px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-top: 60px;
 }
 
 .founder-changer {
-    max-width: 97px;
+  max-width: 97px;
 }
 
 .active-img {
-    display: none;
+  display: none;
 }
 
 .section-about-us__founder.active .active-img {
-    display: inline-block;
+  display: inline-block;
 }
 
 .section-about-us__founder.active .nonactive-img {
-    display: none;
+  display: none;
 }
 
 .about-founders {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 64px 48px;
-    background-color: rgba(255, 251, 250, 0.04);
-    grid-column: span 3;
+  margin-top: 80px;
+
+  padding: 64px 48px;
+  background-color: rgba(255, 251, 250, 0.04);
+  grid-column: span 3;
 }
 
 .about-founders p {
-    font-size: 20px;
-    line-height: 26px;
-    color: rgba(230, 225, 224, 0.6);
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(230, 225, 224, 0.6);
 }
 
+.about-founder {
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+}
+
+.about-founder.active {
+  display: flex;
+}
 
 /* MISSIONS */
 
 .section-about-us__missions {
-    grid-template-columns: 1fr;
-    gap: 100px;
+  grid-template-columns: 1fr;
+  gap: 100px;
 }
 
 .section-about-us__missions_header {
-    max-width: 1084px;
-    margin: auto;
+  max-width: 1084px;
+  margin: auto;
 }
 
 .section-about-us__missions_header .heading-tertiary {
-    text-align: center;
+  text-align: center;
 }
 
 .section__missions-values-cont {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    justify-content: space-between;
-    row-gap: 120px;
-    background: rgba(255, 251, 250, 0.04);
-    padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  justify-content: space-between;
+  row-gap: 120px;
+  background: rgba(255, 251, 250, 0.04);
+  padding: 80px;
 }
 
 .section__missions-values-box {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    max-width: 528px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 528px;
 }
 
 .section__missions-values-cont .section__missions-values-box:nth-child(3) {
-    justify-self: end;
+  justify-self: end;
 }
 
 .section__missions-values-list {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .missions__heading {
-    grid-column: span 2;
-    text-align: center;
+  grid-column: span 2;
+  text-align: center;
 }
 
 .section__missions-value {
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    color: #fffbfa;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #fffbfa;
 }
 
 .missions-header__subheading {
-    font-size: 24px;
-    line-height: 31px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #e6e1e0;
-    margin-top: 48px;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #e6e1e0;
+  margin-top: 48px;
 }
 
-
 /* ORIGINS */
-
 
 /* .section-about-us__origins {
 
 } */
 
 .section-origins__first {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 48px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 48px;
 }
 
 .section-origins__P {
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    color: rgba(255, 251, 250, 0.6);
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 251, 250, 0.6);
 }
 
 .section-origins__first-text {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    align-items: flex-start;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .office_build-img {
-    height: auto;
-    width: 100%;
-    object-fit: cover;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
-
 
 /* NEW_TALENTS */
 
 .section-about-us__new-talents {
-    grid-template-columns: 45fr 55fr;
-    gap: 80px;
+  grid-template-columns: 45fr 55fr;
+  gap: 80px;
 }
 
 .section-new-talents__left-side {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
 }
 
 .section-new-talents__right-side {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .new-talents__subheading {
-    font-size: 24px;
-    line-height: 31px;
-    letter-spacing: 0.04em;
-    color: #fffbfa;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+  color: #fffbfa;
 }
 
 .new-talents__P {
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    color: rgba(230, 225, 224, 0.6);
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(230, 225, 224, 0.6);
 }
 
 .new-talents-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  width: 100%;
 }
 
 input {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .new-talents-form input[type="text"],
 .new-talents-form input[type="email"],
 .new-talents-form input[type="url"],
 .new-talents-form textarea {
-    padding: 16px;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.04em;
-    color: rgba(15, 2, 1, 0.32);
-    background: #fffbfa;
-    width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: rgba(15, 2, 1, 0.32);
+  background: #fffbfa;
+  width: 100%;
 }
 
 .visit-socials-text {
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    color: rgba(255, 251, 250, 0.49);
-    text-align: end;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 251, 250, 0.49);
+  text-align: end;
 }
 
 .new-talents-social-box {
-    margin-top: 32px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-left: auto;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: auto;
 }
 
 .new-talents__city-img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .section-about-us__subsec {
-    display: none;
-    width: 100%;
+  display: none;
+  width: 100%;
 }
 
 .section-about-us__subsec.active {
-    display: grid;
+  display: grid;
 }
-
 
 /******************************FOOTER STYLES**************************/
 
 .footer {
-    margin-top: 152px;
-    margin-bottom: 80px;
+  margin-top: 152px;
+  margin-bottom: 80px;
 }
 
 .footer__header {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    align-items: center;
-    justify-items: center;
-    gap: 80px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 80px;
 }
 
 .heading-tertiary {
-    font-family: "Orbitron";
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fffbfa;
+  font-family: "Orbitron";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fffbfa;
 }
 
 .sub-heading {
-    font-family: "Orbitron";
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 48px;
-    letter-spacing: 0.04em;
-    color: #fffbfa;
-    width: max-content;
+  font-family: "Orbitron";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  color: #fffbfa;
+  width: max-content;
 }
 
 .footer__header-border {
-    border: 1px solid #fffbfa;
-    opacity: 0.08;
-    width: 100%;
+  border: 1px solid #fffbfa;
+  opacity: 0.08;
+  width: 100%;
 }
 
 .footer__header-socials {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .footer__header-social img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
-
 
 /* footer nav */
 
 .footer__content {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__nav-above {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 .footer__nav__box {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__nav-above__link:link,
 .footer__nav-above__link:visited {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #e6e1e0;
-    width: max-content;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #e6e1e0;
+  width: max-content;
 }
 
 .footer__nav-above__link:hover,
 .footer__nav-above__link:active {
-    color: rgba(230, 225, 224, 0.8);
+  color: rgba(230, 225, 224, 0.8);
 }
 
 .footer__nav-above__border {
-    border: 1px solid #e6e1e0;
-    opacity: 0.38;
-    width: 2px;
-    height: 8px;
+  border: 1px solid #e6e1e0;
+  opacity: 0.38;
+  width: 2px;
+  height: 8px;
 }
 
 .footer__copyright-text {
-    margin-top: 24px;
-    font-size: 14px;
-    line-height: 18px;
-    color: #e6e1e0;
-    opacity: 0.64;
-    text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #e6e1e0;
+  opacity: 0.64;
+  text-align: center;
 }
-
 
 /* below nav */
 
 .footer__nav-below {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .footer__nav-below__link {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color: #e6e1e0;
-    opacity: 0.4;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #e6e1e0;
+  opacity: 0.4;
 }
 
 .footer__nav-below__border {
-    width: 2px;
-    height: 4px;
-    background: #e6e1e0;
-    opacity: 0.38;
+  width: 2px;
+  height: 4px;
+  background: #e6e1e0;
+  opacity: 0.38;
 }
 
 @media only screen and (max-width: 1280px) {
-    .heading-secondary {
-        font-family: "Orbitron";
-        font-weight: 900;
-        font-size: 32px;
-        line-height: 58px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #fffbfa;
-    }
-    .section-about-us__new-talents {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
+  .heading-secondary {
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 58px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fffbfa;
+  }
+  .section-about-us__new-talents {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
 }
 
 @media only screen and (max-width: 1040px) {
-    .section-about-us__founder {
-        max-width: 210px;
-        justify-self: end;
-    }
-    .section-about-us__founder.active {
-        max-width: 250px;
-        justify-self: start;
-    }
-    .founder-changer {
-        width: 100%;
-        max-width: 48px;
-        max-height: 36px;
-    }
-    .founder__name {
-        font-size: 16px;
-        line-height: 20px;
-        width: max-content;
-    }
-    .founder__position {
-        font-size: 14px;
-        line-height: 18px;
-        width: max-content;
-    }
-    .section-about-us__founder.active .founder__name {
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .section-about-us__founder.active .founder__position {
-        font-size: 16px;
-        line-height: 21px;
-    }
-    .section-about-us__nav-link {
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .section-about-us__nav-list.active .section-about-us__nav-link,
-    .section-about-us__nav-list:hover .section-about-us__nav-link {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    .section-about-us__nav-box {
-        gap: 16px;
-    }
-    .section-about-us__new-talents {
-        grid-template-columns: 1fr;
-    }
-    .section-new-talents__right-side {
-        grid-row: 1/-1;
-    }
-    .section__missions-values-cont {
-        padding: 48px 24px;
-    }
-    .section__missions-value {
-        font-size: 16px;
-        line-height: 21px;
-    }
-    .heading-tertiary {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    .missions-header__subheading {
-        font-size: 16px;
-        line-height: 21px;
-    }
-    .New-talents__NEW {
-        display: none;
-    }
-    .section-about-us__container,
-    .section-about-us__header {
-        gap: 120px;
-    }
-    .section-about-us__missions {
-        gap: 48px;
-    }
+  .section-about-us__founder {
+    max-width: 210px;
+    justify-self: end;
+  }
+  .section-about-us__founder.active {
+    max-width: 250px;
+    justify-self: start;
+  }
+  .founder-changer {
+    width: 100%;
+    max-width: 48px;
+    max-height: 36px;
+  }
+  .founder__name {
+    font-size: 16px;
+    line-height: 20px;
+    width: max-content;
+  }
+  .founder__position {
+    font-size: 14px;
+    line-height: 18px;
+    width: max-content;
+  }
+  .section-about-us__founder.active .founder__name {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .section-about-us__founder.active .founder__position {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .section-about-us__nav-link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .section-about-us__nav-list.active .section-about-us__nav-link,
+  .section-about-us__nav-list:hover .section-about-us__nav-link {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .section-about-us__nav-box {
+    gap: 16px;
+  }
+  .section-about-us__new-talents {
+    grid-template-columns: 1fr;
+  }
+  .section-new-talents__right-side {
+    grid-row: 1/-1;
+  }
+  .section__missions-values-cont {
+    padding: 48px 24px;
+  }
+  .section__missions-value {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .heading-tertiary {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .missions-header__subheading {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .New-talents__NEW {
+    display: none;
+  }
+  .section-about-us__container,
+  .section-about-us__header {
+    gap: 120px;
+  }
+  .section-about-us__missions {
+    gap: 48px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
-    .container {
-        margin: 0 24px;
-    }
-    .heading-secondary {
-        font-family: "Orbitron";
-        font-weight: 900;
-        font-size: 18px;
-        line-height: unset;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #fffbfa;
-        text-align: center;
-    }
-    .btn-primary {
-        border: 1px solid #fffbfa;
-        position: relative;
-        display: grid;
-        grid-auto-flow: column;
-        align-items: center;
-        grid-gap: 12px;
-        padding: 12px 40px;
-    }
-    button {
-        background: none;
-        outline: none;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    .section-about-us__founder.active {
-        max-width: 200px;
-    }
-    .founder__name {
-        display: none;
-    }
-    .founder__position {
-        display: none;
-    }
-    .section-about-us__founder.active .founder__name {
-        display: inline-block;
-    }
-    .section-about-us__founder.active .founder__position {
-        display: inline-block;
-    }
-    .sub-heading {
-        font-size: 20px;
-    }
-    .footer__header-socials img {
-        width: 24px;
-        height: 24px;
-    }
-    .footer__header-socials {
-        gap: 24px;
-    }
-    .footer__header {
-        gap: 24px;
-    }
-    .section-about-us__nav-link {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .section-about-us__nav-list.active .section-about-us__nav-link,
-    .section-about-us__nav-list:hover .section-about-us__nav-link {
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .container {
+    margin: 0 24px;
+  }
+  .heading-secondary {
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: unset;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fffbfa;
+    text-align: center;
+  }
+  .btn-primary {
+    border: 1px solid #fffbfa;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 12px;
+    padding: 12px 40px;
+  }
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .section-about-us__founder.active {
+    max-width: 200px;
+  }
+  .founder__name {
+    display: none;
+  }
+  .founder__position {
+    display: none;
+  }
+  .section-about-us__founder.active .founder__name {
+    display: inline-block;
+  }
+  .section-about-us__founder.active .founder__position {
+    display: inline-block;
+  }
+  .sub-heading {
+    font-size: 20px;
+  }
+  .footer__header-socials img {
+    width: 24px;
+    height: 24px;
+  }
+  .footer__header-socials {
+    gap: 24px;
+  }
+  .footer__header {
+    gap: 24px;
+  }
+  .section-about-us__nav-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .section-about-us__nav-list.active .section-about-us__nav-link,
+  .section-about-us__nav-list:hover .section-about-us__nav-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 @media only screen and (max-width: 580px) {
-    .founder-changer {
-        max-width: 24px;
-        max-height: 28px;
-    }
-    .section-about-us__founder.active .founder__name {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .section-about-us__founder.active .founder__position {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .section-about-us__founder.active {
-        max-width: 120px;
-        gap: 32px;
-    }
-    .founder__position {
-        margin-top: 8px;
-    }
-    .section-about-us__founder {
-        max-width: 80px;
-    }
-    .section-about-us__nav-box {
-        gap: 10px;
-    }
-    .about-founders {
-        margin-top: 42px;
-        padding: 16px 8px;
-    }
-    .about-founders p {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .section-about-us__container,
-    .section-about-us__header {
-        gap: 48px;
-    }
-    .missions__heading {
-        grid-column: 1;
-    }
-    .section__missions-values-cont {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-    .heading-tertiary {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .missions-header__subheading {
-        margin-top: 24px;
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .section-about-us__missions {
-        gap: 48px;
-    }
+  .founder-changer {
+    max-width: 24px;
+    max-height: 28px;
+  }
+  .section-about-us__founder.active .founder__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .section-about-us__founder.active .founder__position {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .section-about-us__founder.active {
+    max-width: 120px;
+    gap: 32px;
+  }
+  .founder__position {
+    margin-top: 8px;
+  }
+  .section-about-us__founder {
+    max-width: 80px;
+  }
+  .section-about-us__nav-box {
+    gap: 10px;
+  }
+  .about-founders {
+    margin-top: 42px;
+    padding: 16px 8px;
+  }
+  .about-founders p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .section-about-us__container,
+  .section-about-us__header {
+    gap: 48px;
+  }
+  .missions__heading {
+    grid-column: 1;
+  }
+  .section__missions-values-cont {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .heading-tertiary {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .missions-header__subheading {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .section-about-us__missions {
+    gap: 48px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .footer__header {
-        grid-auto-flow: row;
-        grid-template-columns: 1fr;
-    }
+  .footer__header {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
-    .section-origins__first {
-        grid-template-columns: 1fr;
-    }
+  .section-origins__first {
+    grid-template-columns: 1fr;
+  }
 }
