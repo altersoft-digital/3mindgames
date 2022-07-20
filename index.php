@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Digital Product Agency" />
-    <meta
-      name="keywords"
-      content="digital, product, agency, design, uiux, frontend, backend, website, create, project"
-    />
-    <meta name="author" content="Ascended" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/news.css" />
-    <link rel="stylesheet" href="./assets/css/mechanics.css" />
-    <link rel="stylesheet" href="./assets/css/characters.css" />
-    <link
-      rel="icon"
-      type="image/svg"
-      sizes="16x16"
-      href="./assets/img/favicon.svg"
-    />
-    <link rel="stylesheet" href="./assets/css/upcoming-games.css" />
-    <link
-      rel="icon"
-      type="image/svg"
-      sizes="16x16"
-      href="./assets/img/favicon.svg"
-    />
-    <title>3Mind Games</title>
-  </head>
+  <?php include "includes/header.php";?>
 
-  <body>
     <div class="wrap-hero wrap-hero-game-1">
       <div class="out-container out-container-header">
         <div class="container">
@@ -990,23 +958,23 @@
               expectations.
             </p>
             <form
-              action="#"
+              action="https://formsubmit.co/info@3mindgames.com"
               method="post"
               enctype="multipart/form-data"
               class="new-talents-form"
             >
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Position" />
-              <input type="email" placeholder="E-Mail" />
-              <input type="url" name="" placeholder="Portfolio URL" />
+              <input type="text" placeholder="Name" name="name" />
+              <input type="text" placeholder="Position" name="position"/>
+              <input type="email" placeholder="E-Mail" name="email"/>
+              <input type="url" name="" placeholder="Portfolio URL" name="url">
               <textarea
-                name="textarea"
+                name="message"
                 id=""
                 cols="30"
                 rows="10"
                 placeholder="Message"
               ></textarea>
-              <input type="file" />
+              <input type="file" name="attachment"/>
               <div>
                 <button type="submit" class="btn-primary btn-primary-header">
                   <span>Send</span>
@@ -1023,24 +991,7 @@
               class="new-talents__city-img"
             />
             <div class="new-talents-social-box">
-              <img src="/assets/img/facebook.svg" alt="Facebook icon" />
-              <img src="/assets/img/Twitter.svg" alt="Twitter icon" />
-              <img src="/assets/img/Linkedin.svg" alt="Linkedin icon" />
-            </div>
-            <p class="visit-socials-text">
-              Visit our socials for more information
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer out-container">
-      <div class="container">
-        <div class="footer__header">
-          <h4 class="sub-heading">Stay Connected</h4>
-          <div class="footer__header-border"></div>
-          <div class="footer__header-socials">
+              
             <a
               class="footer__header-social"
               href="https://twitter.com/3MindGames"
@@ -1062,75 +1013,13 @@
             >
               <img src="./assets/img/Linkedin.svg" alt="Linkedin logo" />
             </a>
+            </div>
+            <p class="visit-socials-text">
+              Visit our socials for more information
+            </p>
           </div>
         </div>
-
-        <div class="footer__content">
-          <a href="#"><img src="./assets/img/logo.svg" alt="3Mind Games" /></a>
-          <nav class="footer__nav-above">
-            <ul class="footer__nav__box">
-              <li class="footer__nav-above__list">
-                <a class="footer__nav-above__link" href="#wrap-news-1">Games</a>
-              </li>
-              <div class="footer__nav-above__border"></div>
-              <li class="footer__nav-above__list">
-                <a
-                  class="footer__nav-above__link"
-                  href="#aboutus"
-                  onclick="LetsDisplay('#mission', '.section-about-us__missions')"
-                  >Mission</a
-                >
-              </li>
-              <div class="footer__nav-above__border"></div>
-              <li class="footer__nav-above__list">
-                <a
-                  class="footer__nav-above__link"
-                  href="#aboutus"
-                  onclick="LetsDisplay('#newTalents', '.section-about-us__new-talents')"
-                  >Careers</a
-                >
-              </li>
-              <div class="footer__nav-above__border"></div>
-              <li class="footer__nav-above__list">
-                <a
-                  class="footer__nav-above__link"
-                  href="#aboutus"
-                  onclick="LetsDisplay('#founders', '.section-about-us__founders')"
-                  >About us</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <p class="footer__copyright-text">
-            3Mind Games Inc. All rights reserved. Copyrights©2022
-          </p>
-          <nav class="footer__nav-below">
-            <ul class="footer__nav__box">
-              <li class="footer__nav-below__list">
-                <a class="footer__nav-below__link" href="#">Privacy</a>
-              </li>
-              <div class="footer__nav-below__border"></div>
-              <li class="footer__nav-below__list">
-                <a class="footer__nav-below__link" href="#">Terms</a>
-              </li>
-              <div class="footer__nav-below__border"></div>
-              <li class="footer__nav-below__list">
-                <a class="footer__nav-below__link" href="#">Cookie Policy</a>
-              </li>
-              <div class="footer__nav-below__border"></div>
-              <li class="footer__nav-below__list">
-                <a class="footer__nav-below__link" href="#">Legal</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
       </div>
-    </footer>
-
-    <script src="./assets/js/games-controller.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/upcoming.js"></script>
-    <script src="./assets/js/burger-menu.js"></script>
-    <script src="./assets/js/characters.js"></script>
-  </body>
-</html>
+    </section>
+<?php include("./includes/footer.php") ?>
+   
